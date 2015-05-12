@@ -13,7 +13,7 @@ msgid "* You can safely install your backup on other device and use your wallet 
 msgstr ""
 
 #: public/views/splash/1.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature digibyte wallet"
 msgstr ""
 
 #: src/js/services/notificationsService.js
@@ -21,7 +21,7 @@ msgid "A transaction was finally rejected"
 msgstr ""
 
 #: public/views/preferences.html
-msgid "About Copay"
+msgid "About DigiByte Gaming Wallet"
 msgstr ""
 
 #: public/views/includes/sidebar.html
@@ -88,11 +88,11 @@ msgid "Before receiving funds, it is highly recommended you backup your wallet k
 msgstr ""
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
+msgid "DigiByte URI is NOT valid!"
 msgstr ""
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "DigiByte address"
 msgstr ""
 
 #: public/views/modals/txp-details.html
@@ -347,7 +347,7 @@ msgid "Import backup"
 msgstr ""
 
 #: public/views/add.html
-msgid "Import from Copay Beta 0.9"
+msgid "Import from DGBWallet Beta 0.9"
 msgstr ""
 
 #: public/views/importLegacy.html
@@ -435,7 +435,7 @@ msgid "Multisignature wallet"
 msgstr ""
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My DigiByte address"
 msgstr ""
 
 #: public/views/paymentUri.html
@@ -866,7 +866,7 @@ msgid "WARNING: Wallet not registered"
 msgstr ""
 
 #: public/views/splash/1.html
-msgid "WELCOME TO COPAY"
+msgid "WELCOME TO DigiByte Gaming Wallet"
 msgstr ""
 
 #: public/views/copayers.html

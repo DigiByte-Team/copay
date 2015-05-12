@@ -8,7 +8,7 @@ plugins:
 	make -C project plugins
 
 project: 
-	cordova create project com.bitpay.copay Copay
+	cordova create project co.digibyte.digibytegaming "DigiByte Gaming Wallet"
 	cp config.xml project/config.xml
 	cp ProjectMakefile project/Makefile
 	cp -af ../dist/web/** project/www

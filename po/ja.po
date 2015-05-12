@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Copay\n"
+"Project-Id-Version: DigiByte Gaming Wallet\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -28,7 +28,7 @@ msgstr ""
 "末でご利用いただけます。"
 
 #: public/views/splash/1.html
-msgid "A multisignature bitcoin wallet"
+msgid "A multisignature digibyte wallet"
 msgstr "マルチシグネチャビットコインウォレット"
 
 #: src/js/services/notificationsService.js
@@ -36,8 +36,8 @@ msgid "A transaction was finally rejected"
 msgstr "取引がようやく却下されました"
 
 #: public/views/preferences.html
-msgid "About Copay"
-msgstr "Copayについて"
+msgid "About DigiByte Gaming Wallet"
+msgstr "DigiByte Gaming Walletについて"
 
 #: public/views/includes/sidebar.html
 msgid "Add wallet"
@@ -104,11 +104,11 @@ msgstr ""
 "します。"
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
-msgstr "Bitcoin URI が無効です！"
+msgid "DigiByte URI is NOT valid!"
+msgstr "DigiByte URI が無効です！"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "DigiByte address"
 msgstr "ビットコインアドレス"
 
 #: public/views/modals/txp-details.html
@@ -358,8 +358,8 @@ msgid "Import backup"
 msgstr "バックアップをインポート"
 
 #: public/views/add.html
-msgid "Import from Copay Beta 0.9"
-msgstr "Copay Beta 0.9からのインポート"
+msgid "Import from DGBWallet Beta 0.9"
+msgstr "DGBWallet Beta 0.9からのインポート"
 
 #: public/views/importLegacy.html
 msgid "Import from the Cloud?"
@@ -442,7 +442,7 @@ msgid "Multisignature wallet"
 msgstr "マルチシグネチャウォレット"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My DigiByte address"
 msgstr "私のビットコインアドレス："
 
 #: public/views/paymentUri.html
@@ -481,7 +481,7 @@ msgstr "パスワード"
 #: public/views/includes/password.html
 msgid "Password cannot be recovered. Be sure to write it down"
 msgstr ""
-"Copayではパスワードをリセットしてくれる機能がありませんので、パスワードを忘れ"
+"DigiByte Gaming Walletではパスワードをリセットしてくれる機能がありませんので、パスワードを忘れ"
 "ないよう、控えておいて下さい。"
 
 #: src/js/services/profileService.js
@@ -875,8 +875,8 @@ msgid "WARNING: Wallet not registered"
 msgstr "注意：ウォレットが未登録"
 
 #: public/views/splash/1.html
-msgid "WELCOME TO COPAY"
-msgstr "ようこそ COPAY へ"
+msgid "WELCOME TO DigiByte Gaming Wallet"
+msgstr "ようこそ DigiByte Gaming Wallet へ"
 
 #: public/views/copayers.html
 msgid "Waiting for copayers"

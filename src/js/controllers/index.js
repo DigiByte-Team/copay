@@ -102,6 +102,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       self.txps = [];
       self.copayers = [];
       self.updateColor();
+      self.updateTheme();
 
       storageService.getBackupFlag(self.walletId, function(err, val) {
         self.needsBackup = self.network == 'testnet' ? false : !val;
@@ -352,6 +353,14 @@ angular.module('copayApp.controllers').controller('indexController', function($r
     fc.backgroundColor = self.backgroundColor;
   };
 
+  self.updateTheme = function() {
+    var config = configService.getSync();
+    config.themeFor = config.themeFor || {};
+    self.backgroundTheme = config.themeFor[self.walletId];
+    var fc = profileService.focusedClient;
+    fc.backgroundTheme = self.backgroundTheme;
+  };   
+
   self.setBalance = function(balance) {
     if (!balance) return;
     var config = configService.getSync().wallet.settings;
@@ -551,6 +560,13 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       $rootScope.$apply();
     });
   });
+
+  $rootScope.$on('Local/ThemeUpdated', function(event) {
+    self.updateTheme();
+    $timeout(function() {
+      $rootScope.$apply();
+    });
+  });  
 
   $rootScope.$on('Local/UnitSettingUpdated', function(event) {
     self.updateAll();

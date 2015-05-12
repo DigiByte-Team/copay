@@ -234,6 +234,18 @@ angular
         }
       })
 
+      .state('preferencesTheme', {
+        url: '/preferencesTheme',
+        templateUrl: 'views/preferencesTheme.html',
+        walletShouldBeComplete: true,
+        needProfile: true,
+        views: {
+          'main': {
+            templateUrl: 'views/preferencesTheme.html'
+          },
+        }
+      })        
+
     .state('preferencesAltCurrency', {
         url: '/preferencesAltCurrency',
         templateUrl: 'views/preferencesAltCurrency.html',

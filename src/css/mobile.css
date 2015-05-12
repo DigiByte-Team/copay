@@ -159,6 +159,7 @@ _:-ms-fullscreen, :root .main {
   margin-bottom: 11px;
   color: #fff;
   height: 175px;
+  background-size: 100% 100%;
 }
 
 .scroll-section {
@@ -581,7 +582,7 @@ to prevent collapsing during animation*/
 }
 
 .reveal-modal.animated.slideInRight, 
-.reveal-modal.animated.slideOutRight, 
+.reveal-modal.animated.slideOutRight,
 .reveal-modal.animated.fadeOutUp, 
 .reveal-modal.animated.slideInUp, 
 .reveal-modal.animated.slideInDown {
@@ -727,6 +728,26 @@ textarea:focus
 .tab-out {
   -webkit-transform: translate3d(-100%, 0, 0) !important;
   transform: translate3d(-100%, 0, 0) !important;
+}
+
+.digibytetip {
+  padding: 5px;
+  width: 80%;
+  background-color: #0066cc;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto 0 auto;
+}
+
+.recentnews {
+  padding: 5px;
+  width: 80%;
+  background-color: #0066cc;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  margin: 15px auto 0 auto;
 }
 
 /* removes 300ms in IE */

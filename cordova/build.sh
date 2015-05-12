@@ -56,7 +56,7 @@ echo "Project directory is $PROJECT"
 if [ ! -d $PROJECT ]; then
   cd $BUILDDIR
   echo "${OpenColor}${Green}* Creating project... ${CloseColor}"
-  cordova create project com.bitpay.copay Copay
+  cordova create project co.digibyte.digibytegaming "DigiByte Gaming Wallet"
   checkOK
 
   cd $PROJECT
@@ -93,7 +93,7 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add org.apache.cordova.statusbar
   checkOK
 
-  cordova plugin add https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git --variable URL_SCHEME=bitcoin
+  cordova plugin add https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git --variable URL_SCHEME=digibyte
   checkOK
 
   cordova plugin add org.apache.cordova.inappbrowser

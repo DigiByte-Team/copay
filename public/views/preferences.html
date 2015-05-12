@@ -18,6 +18,12 @@
         <span ng-style="{'color':index.backgroundColor || '#1ABC9C'}">&block;</span>
       </span>      
     </li>
+    <li class="line-b p20" ng-click="$root.go('preferencesTheme')">
+      <span translate>Theme</span>
+      <span class="right text-gray">
+        <i class="icon-arrow-right3 size-24 right"></i>
+      </span>      
+    </li>    
     <li class="line-b p20">
       <span translate>Encrypt Private Key</span>
       <switch id="network-name" name="encrypt" ng-model="encrypt" class="green right"></switch>
@@ -44,14 +50,6 @@
       </span>
     </li>
 
-    <li class="line-b p20" ng-click="$root.go('preferencesUnit')">
-      <span translate>Unit</span>
-      <span class="right text-gray">
-        <i class="icon-arrow-right3 size-24 right"></i>
-        {{preferences.unitName}}
-      </span>
-    </li>
-      
     <li class="line-b p20" ng-click="$root.go('preferencesAltCurrency')">
       <span translate>Alternative Currency</span>
       <span class="right text-gray">
@@ -61,7 +59,7 @@
     </li>
     
     <li class="line-b p20" ng-click="$root.go('preferencesBwsUrl')">
-      <span>Bitcore Wallet Service</span>
+      <span>Digicore Wallet Service</span>
       <span class="text-gray db">
           <i class="icon-arrow-right3 size-24 right"></i>
           {{preferences.bwsurl}}
@@ -69,7 +67,7 @@
     </li>
     <li class="line-b p20" ng-click="$root.go('about')">
       <i class="icon-arrow-right3 size-24 right text-gray"></i>  
-      <span translate>About Copay</span>
+      <span translate>About Digibyte Gaming Wallet</span>
     </li>
  
   </ul>

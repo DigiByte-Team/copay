@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: Copay\n"
+"Project-Id-Version: DigiByte Gaming Wallet\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
@@ -21,16 +21,16 @@ msgid "* You can safely install your backup on other device and use your wallet 
 msgstr "Vous pouvez installer en toute sécurité votre sauvegarde sur un autre appareil et utiliser votre portefeuille depuis plusieurs appareils en même temps."
 
 #: public/views/splash/1.html
-msgid "A multisignature bitcoin wallet"
-msgstr "Un portefeuille bitcoin multi-signatures"
+msgid "A multisignature digibyte wallet"
+msgstr "Un portefeuille digibyte multi-signatures"
 
 #: src/js/services/notificationsService.js
 msgid "A transaction was finally rejected"
 msgstr "Une transaction a été finalement rejetée"
 
 #: public/views/preferences.html
-msgid "About Copay"
-msgstr "À propos de Copay"
+msgid "About DigiByte Gaming Wallet"
+msgstr "À propos de DigiByte Gaming Wallet"
 
 #: public/views/includes/sidebar.html
 msgid "Add wallet"
@@ -96,12 +96,12 @@ msgid "Before receiving funds, it is highly recommended you backup your wallet k
 msgstr "Avant de recevoir des fonds, il est fortement recommandé de sauvegarder les clés de votre portefeuille."
 
 #: public/views/paymentUri.html
-msgid "Bitcoin URI is NOT valid!"
-msgstr "L'URI Bitcoin n'est pas valide !"
+msgid "DigiByte URI is NOT valid!"
+msgstr "L'URI DigiByte n'est pas valide !"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
-msgstr "Adresse Bitcoin"
+msgid "DigiByte address"
+msgstr "Adresse DigiByte"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Transaction"
@@ -355,8 +355,8 @@ msgid "Import backup"
 msgstr "Importer une sauvegarde"
 
 #: public/views/add.html
-msgid "Import from Copay Beta 0.9"
-msgstr "Importer depuis Copay Beta 0.9"
+msgid "Import from DGBWallet Beta 0.9"
+msgstr "Importer depuis DGBWallet Beta 0.9"
 
 #: public/views/importLegacy.html
 msgid "Import from the Cloud?"
@@ -443,8 +443,8 @@ msgid "Multisignature wallet"
 msgstr "Portefeuille multi-signatures"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
-msgstr "Mon adresse Bitcoin"
+msgid "My DigiByte address"
+msgstr "Mon adresse DigiByte"
 
 #: public/views/paymentUri.html
 msgid "Network"
@@ -874,8 +874,8 @@ msgid "WARNING: Wallet not registered"
 msgstr "ATTENTION : Portefeuille non enregistré"
 
 #: public/views/splash/1.html
-msgid "WELCOME TO COPAY"
-msgstr "BIENVENUE SUR COPAY"
+msgid "WELCOME TO DigiByte Gaming Wallet"
+msgstr "BIENVENUE SUR DigiByte Gaming Wallet"
 
 #: public/views/copayers.html
 msgid "Waiting for copayers"

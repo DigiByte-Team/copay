@@ -1,25 +1,24 @@
 {
-  "name": "copay",
+  "name": "digibyte",
   "description": "A multisignature wallet",
-  "author": "BitPay",
+  "author": "DigiByte",
   "version": "0.10.5",
   "keywords": [
     "wallet",
-    "copay",
     "multisignature",
-    "bitcoin",
+    "digibyte",
     "bitcore"
   ],
   "main": "app.js",
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/bitpay/copay",
+  "homepage": "https://github.com/digibyte/copay",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/digibyte/copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/digibyte/copay/issues"
   },
   "dependencies": {
     "express": "^4.11.2",

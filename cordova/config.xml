@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bitpay.copay" 
+<widget id="co.digibyte.digibytegaming" 
   version="0.10.5"
   android-versionCode="31"
   ios-CFBundleVersion="0.10.5">
-    <name>Copay</name>
+    <name>Digibyte Gaming Wallet</name>
     <description>
-      A secure bitcoin wallet for friends and companies.
+      A secure digibyte wallet for friends and companies.
     </description>
-    <author email="support@bitpay.com" href="https://copay.io">
-        BitPay Inc.
+    <author email="dev@digibyte.co" href="https://digibyte.co">
+        DigiByte Inc.
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -27,7 +27,7 @@
     <preference name="windows-target-version" value="8.1"/>
     <preference name="Orientation" value="portrait" />
     <feature name="App">
-      <param name="android-package" value="com.bitpay.copay" />
+      <param name="android-package" value="co.digibyte.digibytegaming" />
     </feature>
     <feature name="WebIntent">
       <param name="android-package" value="com.borismus.webintent.WebIntent" />

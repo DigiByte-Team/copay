@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'https://dgbwallet.com:3232/bws/api',
     },
 
     // wallet default config
@@ -23,17 +23,17 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'bits',
-        unitToSatoshi: 100,
-        unitDecimals: 2,
-        unitCode: 'bit',
+        unitName: 'DGB',
+        unitToSatoshi: 100000000,
+        unitDecimals: 8,
+        unitCode: 'btc',
         alternativeName: 'US Dollar',
         alternativeIsoCode: 'USD',
       }
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'http://www.digiticker.info/rates',
     },
   };
 

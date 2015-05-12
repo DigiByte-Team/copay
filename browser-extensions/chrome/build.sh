@@ -18,8 +18,8 @@ checkOK() {
 
 # Configs
 BUILDDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-APPDIR="$BUILDDIR/copay-chrome-extension"
-ZIPFILE="copay-chrome-extension.zip"
+APPDIR="$BUILDDIR/digibyte-chrome-extension"
+ZIPFILE="digibyte-chrome-extension.zip"
 VERSION=`cut -d '"' -f2 $BUILDDIR/../../src/js/version.js|head -n 1`
 
 # Move to the build directory
@@ -62,4 +62,4 @@ rm $ZIPFILE
 zip -qr $ZIPFILE "`basename $APPDIR`"
 checkOK
 
-echo "${OpenColor}${Yellow}\nThe Chrome Extension is ready at $BUILDDIR/copay-chrome-extension.zip${CloseColor}"
+echo "${OpenColor}${Yellow}\nThe Chrome Extension is ready at $BUILDDIR/digibyte-chrome-extension.zip${CloseColor}"
