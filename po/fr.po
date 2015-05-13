@@ -37,6 +37,7 @@ msgid "Add wallet"
 msgstr "Ajouter un portefeuille"
 
 #: public/views/paymentUri.html
+#: public/views/modals/paypro.html
 msgid "Address"
 msgstr "Adresse"
 
@@ -72,6 +73,8 @@ msgid "Available Balance"
 msgstr "Solde disponible"
 
 #: public/views/includes/topbar.html
+#: public/views/modals/tx-details.html
+#: public/views/modals/txp-details.html
 msgid "Back"
 msgstr "Retour"
 
@@ -140,8 +143,6 @@ msgstr "Choisissez un fichier de sauvegarde depuis votre ordinateur"
 #: public/views/modals/copayers.html
 #: public/views/modals/paypro.html
 #: public/views/modals/scanner.html
-#: public/views/modals/tx-details.html
-#: public/views/modals/txp-details.html
 msgid "Close"
 msgstr "Fermer"
 
@@ -173,6 +174,14 @@ msgstr "Copiez le texte dans un endroit sûr (bloc-notes ou e-mail)"
 msgid "Copy to clipboard"
 msgstr "Copier dans le presse-papier"
 
+#: src/js/controllers/walletHome.js
+msgid "Could not broadcast transaction. Please try again."
+msgstr "Impossible de diffuser la transaction. Veuillez réessayer."
+
+#: src/js/controllers/walletHome.js
+msgid "Could not connect wallet service. Check your Internet connexion and your wallet service configuration."
+msgstr "Impossible de se connecter au service de portefeuille. Vérifiez votre connexion Internet et la configuration de votre service de portefeuille."
+
 #: src/js/services/profileService.js
 msgid "Could not create using the specified extended private key"
 msgstr "Impossible de créer en utilisant la clé privée étendue spécifiée"
@@ -180,6 +189,10 @@ msgstr "Impossible de créer en utilisant la clé privée étendue spécifiée"
 #: src/js/controllers/import.js
 msgid "Could not decrypt file, check your password"
 msgstr "Impossible de déchiffrer le fichier, vérifiez votre mot de passe"
+
+#: src/js/controllers/walletHome.js
+msgid "Could not delete transaction. Please try again."
+msgstr "Impossible de supprimer la transaction. Veuillez réessayer."
 
 #: src/js/controllers/walletHome.js
 msgid "Could not fetch payment information"
@@ -199,7 +212,19 @@ msgstr ""
 
 #: src/js/controllers/join.js
 msgid "Could not join wallet:"
-msgstr "Impossible de joindre le portefeuille"
+msgstr "Impossible de rejoindre le portefeuille"
+
+#: src/js/controllers/walletHome.js
+msgid "Could not reject transaction. Please try again."
+msgstr "Impossible de rejeter la transaction. Veuillez réessayer."
+
+#: src/js/controllers/walletHome.js
+msgid "Could not send transaction. Please try again."
+msgstr "Impossible d'envoyer la transaction. Veuillez réessayer."
+
+#: src/js/controllers/walletHome.js
+msgid "Could not sign transaction. Please try again."
+msgstr "Impossible de signer la transaction. Veuillez réessayer."
 
 #: public/views/walletHome.html
 msgid "Could not update Wallet"
@@ -216,14 +241,14 @@ msgstr "Créer un nouveau portefeuille"
 
 #: public/views/includes/sidebar.html
 msgid "Create, join or import"
-msgstr "Créer, joindre ou importer"
+msgstr "Créer, rejoindre ou importer"
 
 #: public/views/modals/txp-details.html
 msgid "Created by"
 msgstr "Créée par"
 
 #: public/views/create.html 
-#: public/views/createProfile.html
+#: public/views/splash/1.html
 msgid "Creating Wallet..."
 msgstr "Création du portefeuille..."
 
@@ -298,7 +323,7 @@ msgstr "Impossible d'importer les portefeuilles"
 
 #: public/views/create.html
 msgid "Family vacation funds"
-msgstr "Fonds de vacance familiale"
+msgstr "Fonds pour les vacances familiales."
 
 #. Get information of payment if using Payment Protocol
 #: src/js/controllers/walletHome.js
@@ -377,7 +402,7 @@ msgstr "Importation..."
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "Information"
-msgstr "Information"
+msgstr "Informations"
 
 #: src/js/controllers/index.js
 msgid "Japanese"
@@ -390,11 +415,11 @@ msgstr "John"
 
 #: public/views/join.html
 msgid "Join"
-msgstr "Joindre"
+msgstr "Rejoindre"
 
 #: public/views/add.html
 msgid "Join shared wallet"
-msgstr "Joindre un portefeuille partagé"
+msgstr "Rejoindre un portefeuille partagé"
 
 #: public/views/join.html
 msgid "Joining Wallet..."
@@ -418,6 +443,8 @@ msgstr "Clé privée étendue maîtresse"
 
 #: public/views/includes/copayers.html 
 #: public/views/modals/copayers.html
+#: public/views/modals/tx-details.html
+#: public/views/modals/txp-details.html
 msgid "Me"
 msgstr "Moi"
 
@@ -499,7 +526,7 @@ msgstr "Coller le code texte de sauvegarde"
 
 #: public/views/join.html
 msgid "Paste invitation here"
-msgstr "Coller l'invitation ici"
+msgstr "Collez l'invitation ici"
 
 #: src/js/controllers/walletHome.js
 msgid "Payment Protocol not supported on Chrome App"
@@ -588,7 +615,7 @@ msgstr "Répétez le mot de passe"
 msgid "Required"
 msgstr "Requis"
 
-#: public/views/createProfile.html
+#: public/views/splash/1.html
 msgid "Retrying..."
 msgstr "Nouvelle tentative"
 
@@ -634,11 +661,11 @@ msgstr "Sélectionner un portefeuille"
 
 #: public/views/create.html
 msgid "Select required signatures"
-msgstr "Sélectionner les signatures requises"
+msgstr "Sélectionnez le nombre de signatures requises"
 
 #: public/views/create.html
 msgid "Select total number of copayers"
-msgstr "Sélectionner un nombre total de copayers"
+msgstr "Sélectionnez le nombre total de copayers"
 
 #: public/views/walletHome.html
 #: public/views/includes/transaction.html
@@ -658,6 +685,10 @@ msgstr "Envoyée"
 #: public/views/importLegacy.html
 msgid "Server"
 msgstr "Serveur"
+
+#: public/views/preferencesAbout.html
+msgid "Session log"
+msgstr "Journal de session"
 
 #: public/views/backup.html
 msgid "Set up a Password for your backup"
@@ -780,10 +811,6 @@ msgstr "Transaction acceptée..."
 msgid "Transaction broadcasted"
 msgstr "Transaction diffusée"
 
-#: src/js/controllers/walletHome.js
-msgid "Transaction could not be deleted. Please try again."
-msgstr "La transaction ne peut pas être supprimée. Veuillez réessayer."
-
 #: public/views/modals/txp-details.html
 msgid "Transaction finally rejected"
 msgstr "Transaction finalement rejetée"
@@ -791,18 +818,6 @@ msgstr "Transaction finalement rejetée"
 #: src/js/controllers/walletHome.js
 msgid "Transaction not broadcasted. Please try again."
 msgstr "Transaction non diffusée. Veuillez réessayer."
-
-#: src/js/controllers/walletHome.js
-msgid "Transaction not rejected. Please try again."
-msgstr "Transaction non rejetée. Veuillez réessayer."
-
-#: src/js/controllers/walletHome.js
-msgid "Transaction not sent. Please try again."
-msgstr "Transaction non envoyée. Veuillez réessayer."
-
-#: src/js/controllers/walletHome.js
-msgid "Transaction not signed. Please try again."
-msgstr "Transaction non signée. Veuillez réessayer."
 
 #: public/views/modals/txp-details.html
 msgid "Transaction proposal"
@@ -861,10 +876,6 @@ msgstr "Version"
 msgid "View backup"
 msgstr "Voir la sauvegarde"
 
-#: public/views/preferencesAbout.html
-msgid "View session logs"
-msgstr "Voir les journaux de session"
-
 #: public/views/walletHome.html
 msgid "WARNING: Backup needed"
 msgstr "ATTENTION : Sauvegarde nécessaire"
@@ -909,6 +920,10 @@ msgstr "Portefeuille incomplet et cassé "
 msgid "Wallet name"
 msgstr "Nom du portefeuille"
 
+#: src/js/controllers/walletHome.js
+msgid "Wallet service timed out. Check your Internet connexion and your wallet service configuration."
+msgstr "Le service de portefeuille s'est déconnecté. Vérifiez votre connexion Internetet la configuration de votre service de portefeuille."
+
 #: public/views/preferencesDeleteWallet.html
 msgid "Warning!"
 msgstr "Attention !"
@@ -950,7 +965,7 @@ msgstr "Votre portefeuille a été correctement importé"
 #: public/views/create.html
 #: public/views/join.html
 msgid "advanced options"
-msgstr "options avancées"
+msgstr "les options avancées"
 
 #: public/views/walletHome.html
 msgid "in pending transactions"

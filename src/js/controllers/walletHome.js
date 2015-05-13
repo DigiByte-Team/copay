@@ -131,6 +131,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       $scope.amountStr = tx.amountStr;
       $scope.alternativeAmountStr = tx.alternativeAmountStr;
       $scope.copayers = copayers
+      $scope.copayerId = fc.credentials.copayerId;
       $scope.loading = null;
       $scope.color = fc.backgroundColor;
 
@@ -356,6 +357,9 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       return;
 
     var fc = profileService.focusedClient;
+    if (!fc)
+      return;
+
     $timeout(function() {
       storageService.getLastAddress(fc.credentials.walletId, function(err, addr) {
         if (addr) {
@@ -840,6 +844,8 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       $scope.btx = btx;
       $scope.settings = config;
       $scope.color = fc.backgroundColor;
+      $scope.copayerId = fc.credentials.copayerId;
+      $scope.isShared = fc.credentials.n > 1;
 
       $scope.getAmount = function(amount) {
         return self.getAmount(amount);

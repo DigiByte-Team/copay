@@ -737,7 +737,7 @@ angular.module('copayApp.controllers').controller('indexController', function($r
       self.noFocusedWallet = true;
       self.isComplete = null;
       self.walletName = null;
-      go.addWallet();
+      go.path('import');
     });
   });
 
