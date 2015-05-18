@@ -16,7 +16,7 @@
     "foundation-icon-fonts": "*",
     "ng-lodash": "~0.2.0",
     "angular-moment": "~0.9.0",
-    "angular-bitcore-wallet-client": "git://github.com/DigiByte-Team/angular-bitcore-wallet-client.git#329c315ada34291097b6d7a1219b82ba348187cc",
+    "angular-bitcore-wallet-client": "git://github.com/DigiByte-Team/angular-bitcore-wallet-client.git#e26aa2ed63359fe3a923173a09b3dd99d3edccb7",
     "angular-ui-router": "~0.2.13",
     "qrcode-decoder-js": "*",
     "fastclick": "*",
