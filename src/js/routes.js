@@ -27,6 +27,10 @@ angular
         ['debug', 'info', 'warn', 'error', 'log'].forEach(function(level) {
           var orig = $delegate[level];
           $delegate[level] = function() {
+
+            if (level=='error')
+              console.log(arguments);
+
             var args = [].slice.call(arguments);
             if (!Array.isArray(args)) args = [args];
             args = args.map(function(v) {
@@ -269,7 +273,18 @@ angular
 
         }
       })
- 
+      .state('preferencesEmail', {
+        url: '/preferencesEmail',
+        templateUrl: 'views/preferencesEmail.html',
+        walletShouldBeComplete: true,
+        needProfile: true,
+        views: {
+          'main': {
+            templateUrl: 'views/preferencesEmail.html'
+          },
+
+        }
+      })
       .state('preferencesBwsUrl', {
         url: '/preferencesBwsUrl',
         templateUrl: 'views/preferencesBwsUrl.html',
@@ -371,7 +386,7 @@ angular
         needProfile: false
       });
   })
-  .run(function($rootScope, $state, $log, gettextCatalog, uriHandler, isCordova, amMoment, profileService, $timeout) {
+  .run(function($rootScope, $state, $log, gettextCatalog, uriHandler, isCordova, amMoment, profileService, $timeout, nodeWebkit) {
     FastClick.attach(document.body);
 
     // Auto-detect browser language
@@ -393,6 +408,18 @@ angular
       uriHandler.register();
     }
 
+    if (nodeWebkit.isDefined()) {
+      var gui = require('nw.gui');
+      var win = gui.Window.get();
+      var nativeMenuBar = new gui.Menu({ type: "menubar" });
+      try {
+        nativeMenuBar.createMacBuiltin("Copay");
+      } catch(e) {
+        $log.debug('This is not OSX');
+      }
+      win.menu = nativeMenuBar;
+    }
+
     var pageWeight = {
       walletHome: 0,
       copayers: -1,
@@ -409,6 +436,7 @@ angular
       preferencesAltCurrency: 12,
       preferencesBwsUrl: 12,
       preferencesAlias: 12,
+      preferencesEmail: 12,
       about: 12,
       logs: 13,
       add: 11,
@@ -474,7 +502,6 @@ angular
         e2.addEventListener("animationend", cleanUp, true);
         e.addEventListener("webkitAnimationEnd", cleanUp, true);
         e2.addEventListener("webkitAnimationEnd", cleanUp, true);
-        // TODO
         timeoutID = setTimeout(cleanUp, 500);
       };
 
@@ -532,7 +559,7 @@ angular
           e.className = entering || '';
           cachedBackPanel.className = leaving || '';
           cleanUpLater(e, cachedBackPanel);
-          console.log('USing', cachedTransitionState); //TODO
+          //console.log('USing animation', cachedTransitionState);
           return true;
         } else {
           var sc;
@@ -550,7 +577,7 @@ angular
             cachedBackPanel.getElementsByClassName('content')[0].scrollTop  = sc;
 
           cachedTransitionState = desiredTransitionState;
-          console.log('CACHing', cachedTransitionState); //TODO
+          //console.log('CACHing animation', cachedTransitionState); 
           return false;
         }
       }
