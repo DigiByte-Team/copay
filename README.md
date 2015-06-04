@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/marianorod/copay-brand/master/copay-logo-full-negative.png" alt="Digibyte" width="300">
+<img src="https://raw.githubusercontent.com/bitpay/copay/master/public/img/logo.png" alt="Copay" width="300">
 
 [![Build Status](https://secure.travis-ci.org/bitpay/copay.svg)](http://travis-ci.org/bitpay/copay) 
 [![Coverage Status](https://img.shields.io/coveralls/bitpay/copay.svg)](https://coveralls.io/r/bitpay/copay?branch=master) 
@@ -93,7 +93,21 @@ One solution to this issue is to use *Copay* with a Python version manager and i
 pyenv install 2.6.9
 pyenv global 2.6.9
 ```
+# Desktop versions (Windows, OSX, Linux)
 
+Copay uses NW.js (also know as node-webkit) for its desktop version. NW.js an app runtime based on `Chromium` and `node.js`. 
+
+## Building Copay for OSX, Linux and Windows versions
+
+**Requirements**
+
+  - Install NW.js in your system from [nw.js](http://nwjs.io/)
+
+**Builder**
+
+  - Run `grunt desktop` (*)
+  
+  
 # Development
 
 ## Google Chrome App

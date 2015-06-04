@@ -271,7 +271,7 @@ msgstr "Créer"
 
 #: public/views/add.html
 msgid "Create new wallet"
-msgstr "Créer un nouveau portefeuille"
+msgstr "En créer un"
 
 #: public/views/includes/sidebar.html
 msgid "Create, join or import"
@@ -437,7 +437,7 @@ msgstr "Importer"
 #: public/views/import.html
 #: public/views/splash.html
 msgid "Import backup"
-msgstr "Importer une sauvegarde"
+msgstr "Importer la sauvegarde"
 
 #: public/views/importLegacy.html
 msgid "Import from the Cloud?"
@@ -449,7 +449,7 @@ msgstr "Importer ici"
 
 #: public/views/add.html
 msgid "Import wallet"
-msgstr "Importer un portefeuille"
+msgstr "En importer un"
 
 #: public/views/import.html
 msgid "Importing wallet..."
@@ -474,7 +474,7 @@ msgstr "Rejoindre"
 
 #: public/views/add.html
 msgid "Join shared wallet"
-msgstr "Rejoindre un portefeuille partagé"
+msgstr "En rejoindre un"
 
 #: public/views/join.html
 msgid "Joining Wallet..."
@@ -822,8 +822,8 @@ msgid "Share invitation"
 msgstr "Partager l'invitation"
 
 #: public/views/copayers.html
-msgid "Share this secret with your copayers"
-msgstr "Partagez ce secret avec vos copayers"
+msgid "Share this invitation with your copayers"
+msgstr "Partagez cette invitation avec vos copayers"
 
 #: public/views/walletHome.html
 msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
@@ -864,6 +864,14 @@ msgstr "Succès"
 msgid "Tap to retry"
 msgstr "Tapez pour réessayer"
 
+#: src/js/controllers/walletHome.js
+msgid "The payment was created but could not be completed. Please try again from home screen"
+msgstr "Le paiement a été créé mais n'a pas pu être achevé. Veuillez réessayer depuis l'écran d'accueil"
+
+#: src/js/controllers/walletHome.js
+msgid "The payment was created but could not be signed. Please try again from home screen."
+msgstr "Le paiement a été créé mais n'a pas pu être signé. Veuillez réessayer depuis l'écran d'accueil"
+
 #: public/views/modals/txp-details.html
 msgid "The payment was removed by creator"
 msgstr "Le paiement a été supprimé par le créateur"
@@ -887,7 +895,7 @@ msgstr "Ce portefeuille n'est pas enregistré dans le Bitcore Wallet Service (BW
 
 #: public/views/modals/txp-details.html
 msgid "Time"
-msgstr "Temps"
+msgstr "Heure"
 
 #: public/views/walletHome.html
 #: public/views/includes/transaction.html
@@ -903,10 +911,6 @@ msgstr "Solde verrouillé total"
 #: public/views/modals/tx-details.html
 msgid "Transaction"
 msgstr "Transaction"
-
-#: src/js/controllers/walletHome.js
-msgid "Transaction not broadcasted. Please try again."
-msgstr "Transaction non diffusée. Veuillez réessayer."
 
 #: src/js/controllers/walletHome.js
 msgid "Unable to send transaction proposal"
@@ -1036,8 +1040,8 @@ msgid "email for wallet notifications"
 msgstr "e-mail pour les notifications de portefeuille"
 
 #: public/views/walletHome.html
-msgid "in pending payments"
-msgstr "dans les paiements en attente"
+msgid "locked by pending payments"
+msgstr "verrouillés par les paiements en attente"
 
 #: public/views/copayers.html
 #: public/views/create.html
