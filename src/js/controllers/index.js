@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, lodash, go, profileService, configService, isCordova, rateService, storageService, gettextCatalog, gettext, amMoment) {
+angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, $sce, lodash, go, profileService, configService, isCordova, rateService, storageService, gettextCatalog, gettext, amMoment) {
 
   var self = this;
   self.isCordova = isCordova;
@@ -399,6 +399,8 @@ angular.module('copayApp.controllers').controller('indexController', function($r
     var config = configService.getSync();
     config.colorFor = config.colorFor || {};
     self.backgroundColor = config.colorFor[self.walletId] || '#4A90E2';
+    self.homepageUrl = $sce.trustAsResourceUrl("http://dgbwallet-cms.herokuapp.com/pages/dgbwallet?bgcolor=" + self.backgroundColor.replace("#",''));
+  
     var fc = profileService.focusedClient;
     fc.backgroundColor = self.backgroundColor;
   };

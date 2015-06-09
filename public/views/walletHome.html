@@ -131,11 +131,9 @@
           </div>
         </div>
       </div> <!-- oh -->
-      <a href="#" onclick="window.open('https://www.digibytetip.com', '_system');"><div class="digibytetip" ng-style="{'background-color':index.backgroundColor}">  #DigiByteTip <br>  Tip your friends on Twitch, Twitter and more..</div></a>
-      <a href="#" onclick="window.open('http://www.digibyte.co', '_system');"><div class="recentnews" ng-style="{'background-color':index.backgroundColor}">  Recent News <br>  DigiByte Pwns?!</div></a>
-
-
-
+      <!--<a href="#" onclick="window.open('https://www.digibytetip.com', '_system');"><div class="digibytetip" ng-style="{'background-color':index.backgroundColor}">  #DigiByteTip <br>  Tip your friends on Twitch, Twitter and more..</div></a>
+      <a href="#" onclick="window.open('http://www.digibytemarketplace.com', '_system');"><div class="recentnews" ng-style="{'background-color':index.backgroundColor}">  DigiByte Marketplace <br> Buy gaming items & more with DGB ..</div></a> -->
+      <iframe ng-src="{{index.homepageUrl}}" width="100%" scrolling="auto" frameBorder="0" height="50%" seamless></iframe>
       <div class="m20t" ng-show="index.notAuthorized && ! index.anyOnGoingProcess">
         <div class="text-center text-warning">
           <i class="fi-alert"></i>
