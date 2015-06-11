@@ -2,1074 +2,1102 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: Copay\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tenda WP <traducao@tendawp.com.br>\n"
+"Language-Team: Paulino Michelazzo <michelazzo@me.com>\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pt\n"
 
 #: public/views/modals/txp-details.html
-msgid "* Only payment proposals created by yourself with no peer actions can be removed"
+msgid ""
+"* Only payment proposals created by yourself with no peer actions can be "
+"removed"
 msgstr ""
+"* Apenas propostas de pagamento criadas por você com nenhuma ação de mesmo "
+"nível podem ser removidas."
 
 #: public/views/backup.html
-msgid "* You can safely install your backup on another device and use your wallet from multiple devices at the same time."
+msgid ""
+"* You can safely install your backup on another device and use your wallet "
+"from multiple devices at the same time."
 msgstr ""
+"* Você pode instalar com segurança seu backup em outro dispositivo e usar "
+"sua carteira a partir de vários dispositivos ao mesmo tempo."
 
-#: public/views/splash/1.html
-msgid "A multisignature digibyte wallet"
-msgstr ""
+#: public/views/splash.html
+msgid "A multisignature bitcoin wallet"
+msgstr "Uma carteira de bitcoin multi-assinada"
 
 #: public/views/preferences.html
-msgid "About DigiByte Gaming Wallet"
-msgstr ""
+msgid "About Copay"
+msgstr "Sobre a Copay"
 
 #: public/views/modals/txp-details.html
 msgid "Accept"
-msgstr ""
+msgstr "Aceitar"
 
 #: public/views/includes/sidebar.html
 msgid "Add wallet"
-msgstr ""
+msgstr "Adicionar carteira"
 
-#: public/views/paymentUri.html
-#: public/views/modals/paypro.html
+#: public/views/paymentUri.html public/views/modals/paypro.html
 msgid "Address"
-msgstr ""
+msgstr "Endereço"
 
 #: public/views/preferences.html
 msgid "Advanced"
-msgstr ""
+msgstr "Avançado"
+
+#: public/views/create.html public/views/join.html
+msgid "Advanced options"
+msgstr "Opções avançadas"
 
 #: public/views/preferencesAlias.html
-msgid "Alias for <i>{{index.walletName}}</i>"
-msgstr ""
+msgid "Alias for"
+msgstr "Apelido para"
 
 #: public/views/splash.html
 msgid "Already have a wallet?"
-msgstr ""
+msgstr "Já tem uma carteira?"
 
 #: public/views/preferences.html
 msgid "Alternative Currency"
-msgstr ""
+msgstr "Moeda Alternativa"
 
-#: public/views/paymentUri.html
-#: public/views/walletHome.html
+#: public/views/paymentUri.html public/views/walletHome.html
 #: public/views/modals/txp-details.html
 msgid "Amount"
-msgstr ""
+msgstr "﻿Valor"
 
 #: public/views/walletHome.html
 msgid "Amount in"
-msgstr ""
+msgstr "Montante em"
 
 #: public/views/preferencesLanguage.html
 msgid "Applying changes"
-msgstr ""
+msgstr "Aplicar alterações"
 
-#: src/js/controllers/copayers.js
-#: src/js/controllers/preferencesDelete.js
+#: src/js/controllers/copayers.js src/js/controllers/preferencesDelete.js
 msgid "Are you sure you want to delete this wallet?"
-msgstr ""
+msgstr "Tem certeza que deseja excluir esta carteira?"
 
 #: public/views/walletHome.html
 msgid "Available Balance"
-msgstr ""
+msgstr "Saldo Disponível"
 
-#: public/views/create.html
-#: public/views/join.html
-msgid "BIP32 master extended private key"
-msgstr ""
-
-#: public/views/includes/topbar.html
-#: public/views/modals/tx-details.html
+#: public/views/includes/topbar.html public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "Back"
-msgstr ""
+msgstr "Voltar"
 
 #: public/views/preferences.html
 msgid "Backup"
-msgstr ""
+msgstr "Backup"
 
 #: src/js/controllers/backup.js
 msgid "Backup created"
-msgstr ""
+msgstr "Backup criado"
 
 #: public/views/walletHome.html
 msgid "Backup now"
-msgstr ""
+msgstr "Backup agora"
 
 #: public/views/backup.html
 msgid "Backup options"
-msgstr ""
+msgstr "Opções de backup"
 
 #: public/views/walletHome.html
-msgid "Before receiving funds, it is highly recommended you backup your wallet keys."
+msgid ""
+"Before receiving funds, it is highly recommended you backup your wallet keys."
 msgstr ""
+"Antes de receber fundos, é altamente recomendável que você faça backup de "
+"suas chaves de carteira."
 
 #: public/views/paymentUri.html
-msgid "DigiByte URI is NOT valid!"
-msgstr ""
+msgid "Bitcoin URI is NOT valid!"
+msgstr "Bitcoin URI não é válido!"
 
 #: public/views/walletHome.html
-msgid "DigiByte address"
-msgstr ""
+msgid "Bitcoin address"
+msgstr "Endereço Bitcoin"
 
 #: public/views/modals/txp-details.html
 msgid "Broadcast Payment"
-msgstr ""
+msgstr "Transmitir Pagamento"
 
 #: src/js/controllers/walletHome.js
 msgid "Broadcasting Payment"
-msgstr ""
+msgstr "Transmitindo Pagamento"
 
 #: src/js/controllers/walletHome.js
 msgid "Broadcasting transaction"
-msgstr ""
+msgstr "Transmitindo transação"
 
 #: public/views/unsupported.html
 msgid "Browser unsupported"
-msgstr ""
+msgstr "Navegador não suportado"
 
 #: public/views/modals/txp-details.html
 msgid "But not broadcasted. Try to send manually"
-msgstr ""
+msgstr "Mas não transmitido. Tente enviar manualmente"
 
 #: public/views/includes/password.html
 msgid "CANCEL"
-msgstr ""
+msgstr "CANCELAR"
 
-#: public/views/copayers.html
-#: public/views/walletHome.html
+#: public/views/copayers.html public/views/walletHome.html
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: public/views/modals/paypro.html
 msgid "Certified by"
-msgstr ""
+msgstr "Certificado por"
 
 #: public/views/preferencesAlias.html
 msgid "Changing wallet alias only affects the local wallet name."
 msgstr ""
+"Alterando o apelido da carteira somente afeta o nome da carteira local."
 
 #: src/js/controllers/walletHome.js
 msgid "Check you connection and try again"
-msgstr ""
+msgstr "Verifique sua conexão e tente novamente"
 
 #: public/views/import.html
 msgid "Choose a backup file from your computer"
-msgstr ""
+msgstr "Escolha um arquivo de backup do seu computador"
 
-#: public/views/includes/topbar.html
-#: public/views/modals/copayers.html
-#: public/views/modals/paypro.html
-#: public/views/modals/scanner.html
+#: public/views/includes/topbar.html public/views/modals/copayers.html
+#: public/views/modals/paypro.html public/views/modals/scanner.html
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: public/views/preferences.html
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 #: public/views/preferencesAbout.html
 msgid "Commit hash"
-msgstr ""
+msgstr "Commit de hash"
 
 #: public/views/modals/tx-details.html
 msgid "Confirmations"
-msgstr ""
+msgstr "Confirmações"
 
 #: public/views/modals/copayers.html
 msgid "Copayers"
-msgstr ""
+msgstr "Copayers"
 
 #: public/views/backup.html
 msgid "Copy backup to a safe place"
-msgstr ""
+msgstr "Copie o backup para um lugar seguro"
 
 #: public/views/backup.html
 msgid "Copy this text as it is to a safe place (notepad or email)"
 msgstr ""
+"Copie este texto como está para um lugar seguro (bloco de notas ou e-mail)"
 
 #: public/views/backup.html
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar para área de transferência"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not accept payment. Check you connection and try again"
 msgstr ""
+"Não foi possível aceitar pagamentos. Verifique sua conexão e tente novamente"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not broadcast payment. Check you connection and try again"
 msgstr ""
+"Não foi possível transmitir pagamentos. Verifique sua conexão e tente "
+"novamente"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not connect wallet service. Check your Internet connexion and your wallet service configuration."
+msgid ""
+"Could not connect wallet service. Check your Internet connexion and your "
+"wallet service configuration."
 msgstr ""
+"Não foi possível se conectar com o serviço de carteira. Verifique sua "
+"conexão e as configurações de seu serviço de carteiras."
 
 #: src/js/controllers/walletHome.js
 msgid "Could not create address. Check you connection and try again"
 msgstr ""
+"Não foi possível criar o endereço. Verifique sua conexão e tente novamente"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not create payment proposal"
-msgstr ""
+msgstr "Não foi possível criar proposta de pagamento"
 
 #: src/js/services/profileService.js
 msgid "Could not create using the specified extended private key"
-msgstr ""
+msgstr "Não foi possível criar usando a chave privada estendida especificada"
 
 #: src/js/controllers/import.js
 msgid "Could not decrypt file, check your password"
-msgstr ""
+msgstr "Não foi possível descriptografar o arquivo, verifique sua senha"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not delete payment proposal. Check you connection and try again"
 msgstr ""
+"Não foi possível apagar a proposta de pagamento. Verifique sua conexão e "
+"tente novamente"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not fetch payment information"
-msgstr ""
+msgstr "Não foi possível obter a informação do pagamento"
 
 #: public/views/walletHome.html
 msgid "Could not fetch transaction history"
-msgstr ""
+msgstr "Não foi possível obter o histórico de transação"
 
 #: src/js/services/profileService.js
 msgid "Could not import. Check input file and password"
-msgstr ""
+msgstr "Não foi possível importar. Verifique o arquivo de entrada e senha"
 
 #: src/js/services/profileService.js
 msgid "Could not join using the specified extended private key"
 msgstr ""
+"Não é possível asssociar-se usando a chave privada estendida especificada"
 
 #: src/js/controllers/join.js
 msgid "Could not join wallet:"
-msgstr ""
+msgstr "Não é possível se associar a carteira:"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not reject payment. Check you connection and try again"
 msgstr ""
+"Não é possível rejeitar o pagamentos. Verifique sua conexão e tente novamente"
 
 #: src/js/controllers/walletHome.js
 msgid "Could not send payment"
-msgstr ""
+msgstr "Não foi possível enviar o pagamento"
 
 #: public/views/walletHome.html
 msgid "Could not update Wallet"
-msgstr ""
+msgstr "Não é possível atualizar carteira"
 
-#: public/views/walletHome.html
+#: public/views/create.html public/views/walletHome.html
 msgid "Create"
-msgstr ""
+msgstr "Criar"
 
 #: public/views/add.html
 msgid "Create new wallet"
-msgstr ""
-
-#: public/views/create.html
-msgid "Create {{requiredCopayers}}-of-{{totalCopayers}} wallet"
-msgstr ""
+msgstr "Criando nova carteira"
 
 #: public/views/includes/sidebar.html
 msgid "Create, join or import"
-msgstr ""
+msgstr "Criar, participar ou importar"
 
 #: public/views/modals/txp-details.html
 msgid "Created by"
-msgstr ""
+msgstr "Criado por"
 
 #: public/views/splash.html
 msgid "Creating Profile..."
-msgstr ""
+msgstr "Criando Perfil…"
 
 #: public/views/create.html
 msgid "Creating Wallet..."
-msgstr ""
+msgstr "Criando Carteira…"
 
 #: src/js/controllers/walletHome.js
 msgid "Creating transaction"
-msgstr ""
+msgstr "Criando transação"
 
 #: public/views/modals/tx-details.html
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: public/views/modals/txp-details.html
 msgid "Delete Payment Proposal"
-msgstr ""
+msgstr "Excluir Proposta de Pagamento"
 
 #: public/views/preferencesAdvanced.html
 msgid "Delete Wallet"
-msgstr ""
+msgstr "Excluir Carteira"
 
 #: public/views/copayers.html
 msgid "Delete it and create a new one"
-msgstr ""
+msgstr "Apagar e criar um novo"
 
 #: public/views/preferencesDeleteWallet.html
 msgid "Delete wallet"
-msgstr ""
+msgstr "Excluir carteira"
 
 #: src/js/controllers/walletHome.js
 msgid "Deleting payment"
-msgstr ""
+msgstr "Excluindo pagamento"
 
-#: public/views/modals/paypro.html
-#: public/views/modals/tx-details.html
+#: public/views/modals/paypro.html public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "Details"
-msgstr ""
+msgstr "Detalhes"
 
 #: public/views/preferences.html
 msgid "Disabled"
-msgstr ""
+msgstr "Desabilitado"
 
 #: public/views/backup.html
 msgid "Download backup"
-msgstr ""
+msgstr "Baixar backup"
 
 #: public/views/includes/password.html
 msgid "ENTER"
-msgstr ""
+msgstr "ENTER"
 
 #: public/views/preferences.html
 msgid "Email Notifications"
-msgstr ""
+msgstr "Notificações por E-mail"
 
 #: public/views/preferences.html
 msgid "Encrypt Private Key"
-msgstr ""
+msgstr "Criptografar Chave Privada"
 
 #: src/js/controllers/backup.js
 msgid "Encrypted backup file saved"
-msgstr ""
+msgstr "Arquivo de backup criptografado salvo"
 
 #: src/js/controllers/index.js
 msgid "English"
-msgstr ""
+msgstr "Inglês"
 
 #: public/views/includes/password.html
 msgid "Enter your password"
-msgstr ""
+msgstr "Digite sua senha"
 
 #: src/js/services/profileService.js
 msgid "Error creating wallet"
-msgstr ""
+msgstr "Erro na criação da carteira"
 
 #: src/js/services/profileService.js
 msgid "Error creating wallet. Check your internet connection"
-msgstr ""
+msgstr "Erro criando carteira. Verifique sua conexão com a internet"
 
 #: src/js/services/profileService.js
 msgid "Error importing wallet:"
-msgstr ""
+msgstr "Erro importando carteira:"
 
-#: public/views/modals/paypro.html
-#: public/views/modals/txp-details.html
+#: public/views/modals/paypro.html public/views/modals/txp-details.html
 msgid "Expires"
-msgstr ""
+msgstr "﻿Expira"
 
 #: src/js/controllers/importLegacy.js
 msgid "Failed to import wallets"
-msgstr ""
+msgstr "Falha ao importar carteiras"
 
 #: public/views/create.html
 msgid "Family vacation funds"
-msgstr ""
+msgstr "Fundos de férias com a família"
 
 #. Get information of payment if using Payment Protocol
 #: src/js/controllers/walletHome.js
 msgid "Fetching Payment Information"
-msgstr ""
+msgstr "Buscando Informação de Pagamento"
 
 #: src/js/controllers/index.js
 msgid "French"
-msgstr ""
+msgstr "Francês"
 
 #: src/js/services/notificationsService.js
 msgid "Funds received"
-msgstr ""
+msgstr "Fundos recebidos"
 
 #: public/views/splash.html
 msgid "GET STARTED"
-msgstr ""
+msgstr "COMEÇAR"
 
 #: public/views/walletHome.html
 msgid "Generate new address"
-msgstr ""
+msgstr "Gerar novo endereço"
 
 #: public/views/preferences.html
 msgid "Global settings"
-msgstr ""
+msgstr "Configurações globais"
 
 #: public/views/import.html
 msgid "Have a Backup from Copay v0.9?"
-msgstr ""
+msgstr "Tem um Backup do Copay v 0.9?"
 
-#: public/views/create.html
-#: public/views/join.html
-msgid "Hide Advanced options"
-msgstr ""
+#: public/views/create.html public/views/join.html
+msgid "Hide"
+msgstr "Ocultar"
 
 #: src/js/controllers/index.js
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: src/js/controllers/index.js
 msgid "Home"
-msgstr ""
+msgstr "Início"
 
 #: public/views/create.html
+msgid "If not given, a random key will be generated"
+msgstr "Se não informada, uma chave randômica será gerada"
+
 #: public/views/join.html
 msgid "If not given, a secure key will be generated"
-msgstr ""
+msgstr "Se não informada, uma chave de segurança será gerada"
 
 #: public/views/importLegacy.html
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
-#: public/views/import.html
-#: public/views/splash.html
+#: public/views/import.html public/views/splash.html
 msgid "Import backup"
-msgstr ""
-
+msgstr "Importar backup"
 
 #: public/views/importLegacy.html
 msgid "Import from the Cloud?"
-msgstr ""
+msgstr "Importar da nuvem?"
 
 #: public/views/import.html
 msgid "Import here"
-msgstr ""
+msgstr "Importar aqui"
 
 #: public/views/add.html
 msgid "Import wallet"
-msgstr ""
+msgstr "Importar carteira"
 
 #: public/views/import.html
 msgid "Importing wallet..."
-msgstr ""
+msgstr "Importando carteira…"
 
 #: public/views/importLegacy.html
 msgid "Importing..."
-msgstr ""
+msgstr "Importando…"
 
 #: src/js/controllers/index.js
 msgid "Japanese"
-msgstr ""
+msgstr "﻿Japonês"
 
-#: public/views/create.html
-#: public/views/join.html
+#: public/views/create.html public/views/join.html
 msgid "John"
-msgstr ""
+msgstr "John"
 
 #: public/views/join.html
 msgid "Join"
-msgstr ""
+msgstr "Participar"
 
 #: public/views/add.html
 msgid "Join shared wallet"
-msgstr ""
+msgstr "Associando carteira compartilhada"
 
 #: public/views/join.html
 msgid "Joining Wallet..."
-msgstr ""
+msgstr "Associando-se a Carteira…"
 
 #: public/views/preferences.html
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: public/views/importLegacy.html
 msgid "Learn more about Wallet Migration"
-msgstr ""
+msgstr "Saiba mais sobre Migração de Carteira"
 
 #: public/views/paymentUri.html
 msgid "Make a payment to"
-msgstr ""
+msgstr "Fazer um pagamento para"
 
 #: public/views/create.html
-#: public/views/join.html
 msgid "Master extended private key"
-msgstr ""
+msgstr "Principal chave privada estendida"
 
-#: public/views/includes/copayers.html
-#: public/views/modals/copayers.html
-#: public/views/modals/tx-details.html
-#: public/views/modals/txp-details.html
+#: public/views/includes/copayers.html public/views/modals/copayers.html
+#: public/views/modals/tx-details.html public/views/modals/txp-details.html
 msgid "Me"
-msgstr ""
+msgstr "Eu"
 
 #: public/views/modals/paypro.html
 msgid "Memo"
-msgstr ""
+msgstr "Nota"
 
 #: public/views/modals/tx-details.html
 msgid "Merchant message"
-msgstr ""
+msgstr "Mensagem do Comerciante"
 
 #: public/views/paymentUri.html
 msgid "Message"
-msgstr ""
+msgstr "Mensagem"
 
 #: public/views/walletHome.html
 msgid "More"
-msgstr ""
+msgstr "Mais"
 
 #: public/views/walletHome.html
 msgid "Moved"
-msgstr ""
+msgstr "Movido"
 
 #: public/views/walletHome.html
 msgid "Multisignature wallet"
-msgstr ""
+msgstr "Carteira multi-assinada"
 
 #: public/views/walletHome.html
-msgid "My DigiByte address"
-msgstr ""
+msgid "My Bitcoin address"
+msgstr "Meu endereço Bitcoin"
 
 #: public/views/paymentUri.html
 msgid "Network"
-msgstr ""
+msgstr "Rede"
 
 #: src/js/services/notificationsService.js
 msgid "New Payment Proposal"
-msgstr ""
+msgstr "Nova Proposta de Pagamento"
 
 #: public/views/modals/confirmation.html
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: public/views/walletHome.html
 msgid "No transactions yet"
-msgstr ""
+msgstr "Nenhuma transação ainda"
 
 #: public/views/walletHome.html
 msgid "Not valid"
-msgstr ""
+msgstr "Inválido"
 
-#: public/views/walletHome.html
-#: public/views/modals/tx-details.html
+#: public/views/walletHome.html public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: public/views/modals/tx-status.html
 msgid "OKAY"
-msgstr ""
+msgstr "OKAY"
 
-#: public/views/modals/tx-details.html
-#: public/views/modals/txp-details.html
+#: public/views/modals/tx-details.html public/views/modals/txp-details.html
 msgid "Participants"
-msgstr ""
+msgstr "Participantes"
 
-#: public/views/import.html
-#: public/views/importLegacy.html
+#: public/views/import.html public/views/importLegacy.html
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
 #: public/views/includes/password.html
 msgid "Password cannot be recovered. Be sure to write it down"
-msgstr ""
+msgstr "Senha não pode ser recuperada. Tenha certeza de anotá-la"
 
 #: src/js/services/profileService.js
 msgid "Password needed"
-msgstr ""
+msgstr "Senha necessária"
 
 #: src/js/controllers/password.js
 msgid "Passwords do not match"
-msgstr ""
+msgstr "As senhas não coincidem"
 
 #: public/views/join.html
 msgid "Paste invitation here"
-msgstr ""
+msgstr "Cole o convite aqui"
 
 #: public/views/import.html
 msgid "Paste the backup plain text code"
-msgstr ""
+msgstr "Cole o texto puro do backup aqui"
 
 #: public/views/modals/paypro.html
 msgid "Pay To"
-msgstr ""
+msgstr "Pagar Para"
 
 #: public/views/modals/tx-status.html
 msgid "Payment Accepted"
-msgstr ""
+msgstr "﻿Pagamento Aceito"
 
 #: public/views/modals/txp-details.html
 msgid "Payment Proposal"
-msgstr ""
+msgstr "Proposta de Pagamento"
 
 #: public/views/modals/tx-status.html
 msgid "Payment Proposal Created"
-msgstr ""
+msgstr "Proposta de Pagamento Criada"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected"
-msgstr ""
+msgstr "Proposta de Pagamento Rejeitada"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Rejected by Copayer"
-msgstr ""
+msgstr "Proposta de Pagamento Rejeitada pelo Copayer"
 
 #: src/js/services/notificationsService.js
 msgid "Payment Proposal Signed by Copayer"
-msgstr ""
+msgstr "Proposta de Pagamento Assinada pelo Copayer"
 
 #: public/views/walletHome.html
 msgid "Payment Proposals"
-msgstr ""
+msgstr "Propostas de Pagamento"
 
 #: src/js/controllers/walletHome.js
 msgid "Payment Protocol not supported on Chrome App"
-msgstr ""
+msgstr "Protocolo de pagamento não suportado no Chrome App"
 
 #: public/views/modals/tx-status.html
 msgid "Payment Rejected"
-msgstr ""
+msgstr "Pagamento Rejeitado"
 
-#: public/views/modals/tx-status.html
-#: src/js/services/notificationsService.js
+#: public/views/modals/tx-status.html src/js/services/notificationsService.js
 msgid "Payment Sent"
-msgstr ""
+msgstr "Pagamento Enviado"
 
 #: public/views/modals/txp-details.html
 msgid "Payment accepted..."
-msgstr ""
+msgstr "Pagamento aceito…"
 
 #: public/views/modals/txp-details.html
 msgid "Payment details"
-msgstr ""
+msgstr "Detalhes do pagamento"
 
 #: public/views/modals/txp-details.html
 msgid "Payment finally rejected"
-msgstr ""
+msgstr "Pagamento finalmente rejeitado"
 
 #: public/views/modals/paypro.html
 msgid "Payment request"
-msgstr ""
+msgstr "Pedido de pagamento"
 
 #: public/views/modals/txp-details.html
 msgid "Payment sent!"
-msgstr ""
+msgstr "Pagamento enviado!"
 
 #: public/views/walletHome.html
 msgid "Payment to"
-msgstr ""
+msgstr "Pagamento para"
 
 #: public/views/preferencesDeleteWallet.html
-msgid "Permanently delete this wallet. THIS ACTION CANNOT BE REVERSED"
+msgid "Permanently delete this wallet. THIS ACTION CANNONT BE REVERSED"
 msgstr ""
+"Excluir permanentemente esta carteira. ESTA AÇÃO NÃO PODE SER REVERTIDA"
 
 #: public/views/create.html
 msgid "Personal Wallet"
-msgstr ""
+msgstr "Carteira Pessoal"
 
-#: src/js/controllers/create.js
-#: src/js/controllers/join.js
+#: src/js/controllers/create.js src/js/controllers/join.js
 msgid "Please enter the required fields"
-msgstr ""
+msgstr "Por favor, preencha os campos obrigatórios"
 
 #: src/js/controllers/import.js
 msgid "Please, select your backup file"
-msgstr ""
-
-#: src/js/controllers/index.js
-msgid "Portuguese"
-msgstr ""
+msgstr "Por favor, selecione seu arquivo de backup"
 
 #: public/views/walletHome.html
 msgid "Preferences"
-msgstr ""
-
-#: public/views/modals/scanner.html
-msgid "QR-Scanner"
-msgstr ""
+msgstr "Preferências"
 
 #: src/js/controllers/index.js
 msgid "Receive"
-msgstr ""
+msgstr "﻿Receber"
 
 #: public/views/walletHome.html
 msgid "Received"
-msgstr ""
+msgstr "Recebido"
 
 #: public/views/walletHome.html
 msgid "Reconnecting to Wallet Service..."
-msgstr ""
+msgstr "Reconectando ao Serviço de Carteira…"
 
 #: public/views/walletHome.html
 msgid "Recreate"
-msgstr ""
+msgstr "Recriado"
 
 #: public/views/walletHome.html
 msgid "Recreating Wallet..."
-msgstr ""
+msgstr "Recriando Carteira…"
 
 #: public/views/modals/txp-details.html
 msgid "Reject"
-msgstr ""
+msgstr "Rejeitar"
 
 #: src/js/controllers/walletHome.js
 msgid "Rejecting payment"
-msgstr ""
+msgstr "Rejeitando pagamento"
 
 #: public/views/preferencesAbout.html
 msgid "Release Information"
-msgstr ""
+msgstr "Liberar Informação"
 
-#: public/views/backup.html
-#: public/views/includes/password.html
+#: public/views/backup.html public/views/includes/password.html
 msgid "Repeat password"
-msgstr ""
+msgstr "Repetir Senha"
 
-#: public/views/import.html
-#: public/views/join.html
+#: public/views/import.html public/views/join.html
 msgid "Required"
-msgstr ""
+msgstr "Obrigatório"
 
 #: public/views/splash.html
 msgid "Retrying..."
-msgstr ""
+msgstr "Repetindo…"
 
 #: public/views/includes/password.html
 msgid "SET"
-msgstr ""
+msgstr "DEFINIR"
 
 #: public/views/walletHome.html
 msgid "SKIP BACKUP"
-msgstr ""
+msgstr "PULAR BACKUP"
 
-#: public/views/preferencesAlias.html
-#: public/views/preferencesBwsUrl.html
+#: public/views/preferencesAlias.html public/views/preferencesBwsUrl.html
 #: public/views/preferencesEmail.html
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: public/views/preferencesEmail.html
 msgid "Saving preferences..."
-msgstr ""
+msgstr "Salvando preferências…"
 
 #: src/js/services/notificationsService.js
 msgid "Scan Finished"
-msgstr ""
+msgstr "Pesquisa Finalizada"
 
 #: public/views/preferencesAdvanced.html
 msgid "Scan addresses for funds"
-msgstr ""
+msgstr "Pesquisando endereços por fundos"
 
 #: public/views/walletHome.html
 msgid "Scan status finished with error"
-msgstr ""
+msgstr "Pesquisa de status finalizada com erro"
 
 #: public/views/walletHome.html
 msgid "Scanning Wallet funds..."
-msgstr ""
+msgstr "Pesquisando fundos de carteira…"
 
 #: public/views/modals/tx-details.html
 msgid "See it on the blockchain"
-msgstr ""
+msgstr "Veja no blockchain"
 
 #: public/views/import.html
 msgid "Select a backup file"
-msgstr ""
+msgstr "Selecione um arquivo de backup"
 
 #: public/views/paymentUri.html
 msgid "Select a wallet"
-msgstr ""
+msgstr "Selecione uma carteira"
 
 #: public/views/create.html
 msgid "Select required number of signatures"
-msgstr ""
+msgstr "Selecione o número de assinaturas necessárias"
 
 #: public/views/create.html
 msgid "Select total number of copayers"
-msgstr ""
+msgstr "Selecione o número total de copayers"
 
-#: public/views/walletHome.html
-#: public/views/includes/transaction.html
+#: public/views/walletHome.html public/views/includes/transaction.html
 #: src/js/controllers/index.js
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
-#: public/views/backup.html
-#: public/views/preferencesLogs.html
+#: public/views/backup.html public/views/preferencesLogs.html
 msgid "Send by email"
-msgstr ""
+msgstr "Enviar por E-mail"
 
 #: public/views/walletHome.html
 msgid "Sent"
-msgstr ""
+msgstr "Enviado"
 
 #: public/views/importLegacy.html
 msgid "Server"
-msgstr ""
+msgstr "Servidor"
 
 #: public/views/preferencesAbout.html
 msgid "Session log"
-msgstr ""
+msgstr "Log da sessão"
 
 #: public/views/backup.html
 msgid "Set up a Password for your backup"
-msgstr ""
+msgstr "Configure uma senha para seu backup"
 
 #: public/views/includes/password.html
 msgid "Set up a password"
-msgstr ""
+msgstr "Configure uma senha"
 
 #: public/views/preferencesEmail.html
-msgid "Setting up email notifications could weaken your privacy, if the wallet service provider is compromised. Information available to an attacker would include your wallet addresses and its balance, but no more."
+msgid ""
+"Setting up email notifications could weaken your privacy, if the wallet "
+"service provider is compromised. Information available to an attacker would "
+"include your wallet addresses and its balance, but no more."
 msgstr ""
+"Configurar notificações de e-mail pode enfraquecer sua privacidade se o "
+"prestador de serviços de carteira está comprometido. As informações "
+"disponíveis para um invasor podem incluir seus endereços carteira e seu "
+"saldo, nada mais."
 
 #: public/views/walletHome.html
 msgid "Share address"
-msgstr ""
+msgstr "Compartilhar endereço"
 
 #: public/views/copayers.html
 msgid "Share invitation"
-msgstr ""
+msgstr "Compartilhar convite"
 
 #: public/views/copayers.html
 msgid "Share this invitation with your copayers"
-msgstr ""
+msgstr "Compartilhe este convite com seus copayers"
 
 #: public/views/walletHome.html
-msgid "Share this wallet address to receive payments. To protect your privacy, new addresses are generated automatically once you use them."
+msgid ""
+"Share this wallet address to receive payments. To protect your privacy, new "
+"addresses are generated automatically once you use them."
 msgstr ""
+"Compartilhe este endereço da carteira para receber pagamentos. Para proteger "
+"sua privacidade, novos endereços são gerados automaticamente cada vez que "
+"você usá-los."
 
 #: public/views/create.html
 msgid "Shared Wallet"
-msgstr ""
+msgstr "Compartilhar Carteira"
 
-#: public/views/create.html
-#: public/views/join.html
-msgid "Show Advanced options"
-msgstr ""
+#: public/views/create.html public/views/join.html
+msgid "Show"
+msgstr "Mostrar"
 
 #: src/js/controllers/walletHome.js
 msgid "Signing payment"
-msgstr ""
+msgstr "Pagamento assinado"
 
 #: src/js/controllers/walletHome.js
 msgid "Signing transaction"
-msgstr ""
+msgstr "Transação assinada"
 
 #: src/js/controllers/index.js
 msgid "Spanish"
-msgstr ""
+msgstr "Espanhol"
 
-#: src/js/controllers/copayers.js
-#: src/js/controllers/import.js
+#: src/js/controllers/copayers.js src/js/controllers/import.js
 #: src/js/controllers/preferencesDelete.js
 msgid "Success"
-msgstr ""
+msgstr "Sucesso"
 
 #: public/views/walletHome.html
 msgid "Tap to retry"
-msgstr ""
-
-#: public/views/create.html
-msgid "Testnet"
-msgstr ""
+msgstr "Bata para repetir"
 
 #: src/js/controllers/walletHome.js
-msgid "The payment was created but could not be completed. Please try again from home screen"
+msgid ""
+"The payment was created but could not be completed. Please try again from "
+"home screen"
 msgstr ""
+"O pagamento foi criado mas não pode ser completado. Por favor, tente "
+"novamente a partir da tela inicial."
 
 #: src/js/controllers/walletHome.js
-msgid "The payment was created but could not be signed. Please try again from home screen."
+msgid ""
+"The payment was created but could not be signed. Please try again from home "
+"screen."
 msgstr ""
+"O pagamento foi criado mas não pode ser assinado. Por favor, tente novamente "
+"a partir da tela inicial."
 
 #: public/views/modals/txp-details.html
 msgid "The payment was removed by creator"
-msgstr ""
+msgstr "O pagamento foi removido pelo criador"
 
 #: src/js/controllers/walletHome.js
-msgid "The payment was signed but could not be broadcasted. Please try again from home screen."
+msgid ""
+"The payment was signed but could not be broadcasted. Please try again from "
+"home screen."
 msgstr ""
+"O pagamento foi assinado mas não pode ser transmitido. Por favor, tente "
+"novamente a partir da tela inicial."
 
 #: public/views/backup.html
-msgid "The private key for this wallet is encrypted. Exporting a backup will keep the private key encrypted in the backup archive."
+msgid ""
+"The private key for this wallet is encrypted. Exporting a backup will keep "
+"the private key encrypted in the backup archive."
 msgstr ""
+"A chave privada para esta carteira é criptografada. A exportação de um "
+"backup manterá a chave privada criptografada no arquivo de backup."
 
-#: src/js/controllers/copayers.js
-#: src/js/controllers/preferencesDelete.js
+#: src/js/controllers/copayers.js src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
-msgstr ""
+msgstr "A carteira “{{walletName}}” foi removida"
 
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
-msgstr ""
+msgstr "Existe um erro no formulário"
 
 #: public/views/walletHome.html
-msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
+msgid ""
+"This wallet is not registered at the given Bitcore Wallet Service (BWS). You "
+"can recreate it from the local information."
 msgstr ""
+"Esta carteira não está registrada no dado serviço Wallet Service Bitcore "
+"(BWS) informado. Você pode recriá-la a partir da informação local."
 
 #: public/views/modals/txp-details.html
 msgid "Time"
-msgstr ""
+msgstr "﻿Hora"
 
-#: public/views/walletHome.html
-#: public/views/includes/transaction.html
-#: public/views/modals/tx-details.html
-#: public/views/modals/txp-details.html
+#: public/views/walletHome.html public/views/includes/transaction.html
+#: public/views/modals/tx-details.html public/views/modals/txp-details.html
 msgid "To"
-msgstr ""
+msgstr "Para"
 
 #: public/views/walletHome.html
 msgid "Total Locked Balance"
-msgstr ""
+msgstr "Saldo Total Bloqueado"
 
 #: public/views/modals/tx-details.html
 msgid "Transaction"
-msgstr ""
+msgstr "Transação"
 
 #: src/js/controllers/walletHome.js
 msgid "Unable to send transaction proposal"
-msgstr ""
+msgstr "Impossível enviar a proposta de transação"
 
-#: public/views/walletHome.html
-#: public/views/modals/tx-details.html
+#: public/views/walletHome.html public/views/modals/tx-details.html
 msgid "Unconfirmed"
-msgstr ""
+msgstr "Não confirmado"
 
 #: public/views/preferences.html
 msgid "Unit"
-msgstr ""
+msgstr "﻿Unidade"
 
 #: public/views/walletHome.html
 msgid "Unsent transactions"
-msgstr ""
+msgstr "Transações não enviadas"
 
 #: public/views/modals/paypro.html
 msgid "Untrusted"
-msgstr ""
+msgstr "Não confiável"
 
 #: public/views/walletHome.html
 msgid "Updating Wallet..."
-msgstr ""
+msgstr "Atualizando Carteira…"
 
 #: public/views/preferencesAbout.html
 msgid "Version"
-msgstr ""
+msgstr "﻿Versão"
 
 #: public/views/backup.html
 msgid "View backup"
-msgstr ""
+msgstr "Ver backup"
 
 #: public/views/walletHome.html
 msgid "WARNING: Backup needed"
-msgstr ""
+msgstr "Atenção: Backup necessário"
 
 #: public/views/walletHome.html
 msgid "WARNING: Wallet not registered"
-msgstr ""
-
+msgstr "Atenção: Carteira não registrada"
 
 #: public/views/splash.html
-msgid "WELCOME TO DigiByte Gaming Wallet"
-msgstr ""
+msgid "WELCOME TO COPAY"
+msgstr "BEM-VINDO A COPAY"
 
 #: public/views/copayers.html
 msgid "Waiting for copayers"
-msgstr ""
+msgstr "Aguardando copayers"
 
 #: public/views/copayers.html
 msgid "Waiting..."
-msgstr ""
+msgstr "Aguardando…"
 
 #: public/views/preferences.html
 msgid "Wallet Alias"
-msgstr ""
+msgstr "Apelido da Carteira"
 
 #: src/js/services/profileService.js
 msgid "Wallet Already Imported:"
-msgstr ""
+msgstr "Carteira já importada:"
 
 #: public/views/join.html
 msgid "Wallet Invitation"
-msgstr ""
+msgstr "Convite para Carteira"
 
 #: public/views/join.html
 msgid "Wallet Invitation is not valid!"
-msgstr ""
+msgstr "O convite para carteira não é válido!"
 
 #: src/js/services/profileService.js
 msgid "Wallet already exists"
-msgstr ""
+msgstr "A carteira já existe"
 
 #: public/views/copayers.html
 msgid "Wallet incomplete and broken"
-msgstr ""
+msgstr "Carteira incompleta e quebrada"
 
 #: public/views/create.html
 msgid "Wallet name"
-msgstr ""
+msgstr "Nome da carteira"
 
 #: src/js/controllers/walletHome.js
-msgid "Wallet service timed out. Check your Internet connexion and your wallet service configuration."
+msgid ""
+"Wallet service timed out. Check your Internet connexion and your wallet "
+"service configuration."
 msgstr ""
+"Serviço de carteira expirou. Verifique sua conexão à Internet e sua "
+"configuração do serviço de carteira."
 
 #: public/views/preferencesDeleteWallet.html
 msgid "Warning!"
-msgstr ""
+msgstr "Atenção!"
 
 #: src/js/services/profileService.js
 msgid "Wrong password"
-msgstr ""
+msgstr "Senha errada"
 
 #: public/views/modals/confirmation.html
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: public/views/walletHome.html
 msgid "You do not have a wallet"
-msgstr ""
+msgstr "Você não tem uma carteira"
 
-#: public/views/backup.html
-#: public/views/import.html
+#: public/views/backup.html public/views/import.html
 msgid "Your backup password"
-msgstr ""
+msgstr "Sua senha de backup"
 
-#: public/views/create.html
-#: public/views/join.html
+#: public/views/create.html public/views/join.html
 msgid "Your nickname"
-msgstr ""
+msgstr "Seu apelido"
 
 #: public/views/includes/password.html
 msgid "Your password"
-msgstr ""
+msgstr "Sua senha"
 
 #: public/views/importLegacy.html
 msgid "Your profile password"
-msgstr ""
+msgstr "Sua senha de perfil"
 
 #: src/js/controllers/import.js
 msgid "Your wallet has been imported correctly"
-msgstr ""
+msgstr "Sua carteira foi importada corretamente"
 
 #: public/views/preferencesEmail.html
 msgid "email for wallet notifications"
-msgstr ""
+msgstr "e-mail para notificações de carteira"
 
 #: public/views/walletHome.html
 msgid "locked by pending payments"
-msgstr ""
+msgstr "bloqueado por pagamentos pendentes"
 
-#: public/views/copayers.html
-#: public/views/walletHome.html
-#: public/views/includes/sidebar.html
+#: public/views/copayers.html public/views/create.html
+#: public/views/walletHome.html public/views/includes/sidebar.html
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: public/views/walletHome.html
 msgid "optional"
-msgstr ""
+msgstr "opcional"
 
 #: public/views/preferences.html
 msgid "settings"
-msgstr ""
+msgstr "configurações"
 
 #: public/views/walletHome.html
 msgid "too long!"
-msgstr ""
+msgstr "muito tempo!"
+
+#: public/views/create.html
+msgid "wallet"
+msgstr "carteira"
 
 #: src/js/controllers/importLegacy.js
-msgid "{{len}} wallets imported. Funds scanning in progress. Hold on to see updated balance"
+msgid ""
+"{{len}} wallets imported. Funds scanning in progress. Hold on to see updated "
+"balance"
 msgstr ""
+"{{len}} carteiras importadas. Recursos de digitalização em andamento. Espere "
+"para ver o saldo atualizado"
