@@ -406,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       if (isMobile.Android() || isMobile.Windows()) {
         window.ignoreMobilePause = true;
       }
-      window.plugins.socialsharing.share('digibyte:' + addr, null, null, null);
+      window.plugins.socialsharing.share(addr, null, null, null);
     }
   };
 
@@ -827,6 +827,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       return value;
 
     if (value.indexOf('digibyte:') === 0) {
+      value=value.substr(9);
       return this.setFromUri(value);
     } else if (/^https?:\/\//.test(value)) {
       return this.setFromPayPro(value);
@@ -836,7 +837,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
   };
 
 
-  // History 
+  // History
 
   function strip(number) {
     return (parseFloat(number.toPrecision(12)));
