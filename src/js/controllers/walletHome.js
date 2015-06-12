@@ -406,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       if (isMobile.Android() || isMobile.Windows()) {
         window.ignoreMobilePause = true;
       }
-      window.plugins.socialsharing.share(addr, null, null, null);
+      window.plugins.socialsharing.share('digibyte:' + addr, null, null, null);
     }
   };
 
