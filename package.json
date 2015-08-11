@@ -11,7 +11,7 @@
   ],
   "main": "public/index.html",
   "window": {
-    "title": "Copay - A multisignature wallet",
+    "title": "DigiByte- A multisignature wallet",
     "icon": "./public/img/icons/icon-256.png",
     "toolbar": false,
     "show": true,

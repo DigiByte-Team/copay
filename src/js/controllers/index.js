@@ -1,11 +1,7 @@
 'use strict';
 
-<<<<<<< HEAD
-angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, $sce, lodash, go, profileService, configService, isCordova, rateService, storageService, gettextCatalog, gettext, amMoment) {
-
-=======
 angular.module('copayApp.controllers').controller('indexController', function($rootScope, $scope, $log, $filter, $timeout, lodash, go, profileService, configService, isCordova, rateService, storageService, addressService, gettextCatalog, gettext, amMoment, nodeWebkit, addonManager, feeService) {
->>>>>>> 77abe774ac73dbd0f631e2d3d9ef431befaab77e
+
   var self = this;
   self.isCordova = isCordova;
   self.onGoingProcess = {};

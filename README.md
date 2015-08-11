@@ -112,7 +112,7 @@ cd i18n
 node crowdin_download.js
 ```
 
-<<<<<<< HEAD
+
 # About *Copay*
 
 ## General
@@ -146,4 +146,4 @@ This will download all partially/completely translated languages and clean out a
 - German: @saschad
 
 *Gracias totales!​*
->>>>>>> 77abe774ac73dbd0f631e2d3d9ef431befaab77e
+
