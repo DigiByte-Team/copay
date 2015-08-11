@@ -3,7 +3,6 @@ module.exports = function(grunt) {
   // Project Configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-<<<<<<< HEAD
     release: {
       options: {
         bump: true,
@@ -25,8 +24,6 @@ module.exports = function(grunt) {
         }
       }
     },
-=======
->>>>>>> 77abe774ac73dbd0f631e2d3d9ef431befaab77e
     exec: {
       version: {
         command: 'node ./util/version.js'
