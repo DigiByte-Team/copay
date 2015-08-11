@@ -28,7 +28,7 @@ angular
           var orig = $delegate[level];
           $delegate[level] = function() {
 
-            if (level=='error')
+            if (level == 'error')
               console.log(arguments);
 
             var args = [].slice.call(arguments);
@@ -43,9 +43,13 @@ angular
                   else
                     v = JSON.stringify(v);
                 }
-                v = v.toString();
-                if (v.length > 200)
-                  v = v.substr(0, 197) + '...';
+                // Trim output in mobile
+                if ( window.cordova ) {
+                  v = v.toString();
+                  if (v.length > 1000) {
+                    v = v.substr(0, 997) + '...';
+                  }
+                }
               } catch (e) {
                 console.log('Error at log decorator:', e);
                 v = 'undefined';
@@ -58,7 +62,7 @@ angular
               historicLog.add(level, args.join(' '));
               orig.apply(null, args);
             } catch (e) {
-              console.log('Error at log decorator:', e);
+              console.log('ERROR (at log decorator):', e, args[0]);
             }
           };
         });
@@ -73,15 +77,21 @@ angular
         views: {
           'main': {
             templateUrl: 'views/splash.html',
-            controller: function($scope, $timeout, $log, profileService, go) {
-              if (profileService.profile) {
-                go.walletHome();
-              }
+            controller: function($scope, $timeout, $log, profileService, storageService, go) {
+              storageService.getCopayDisclaimerFlag(function(err, val) {
+                if (!val) go.path('disclaimer');
+
+                if (profileService.profile) {
+                  go.walletHome();
+                }
+              });
 
               $scope.create = function(noWallet) {
                 $scope.creatingProfile = true;
 
-                profileService.create({noWallet: noWallet}, function(err) {
+                profileService.create({
+                  noWallet: noWallet
+                }, function(err) {
                   if (err) {
                     $scope.creatingProfile = false;
                     $log.warn(err);
@@ -91,6 +101,43 @@ angular
                       $scope.create(noWallet);
                     }, 3000);
                   }
+                });
+              };
+            }
+          }
+        }
+      });
+      
+      $stateProvider
+      .state('translators', {
+        url: '/translators',
+        walletShouldBeComplete: true,
+        needProfile: true,
+        views: {
+          'main': {
+            templateUrl: 'views/translators.html'
+          }
+        }
+      })
+      .state('disclaimer', {
+        url: '/disclaimer',
+        needProfile: false,
+        views: {
+          'main': {
+            templateUrl: 'views/disclaimer.html',
+            controller: function($scope, $timeout, storageService, applicationService, go) {
+              storageService.getCopayDisclaimerFlag(function(err, val) {
+                $scope.agreed = val;
+                $timeout(function() {
+                  $scope.$digest();
+                }, 1);
+              });
+
+              $scope.agree = function() {
+                storageService.setCopayDisclaimerFlag(function(err) {
+                  $timeout(function() {
+                    applicationService.restart();
+                  }, 1000);
                 });
               };
             }
@@ -215,7 +262,19 @@ angular
           },
         }
       })
-      .state('preferencesAdvanced', {
+      .state('preferencesFee', {
+        url: '/preferencesFee',
+        templateUrl: 'views/preferencesFee.html',
+        walletShouldBeComplete: true,
+        needProfile: true,
+        views: {
+          'main': {
+            templateUrl: 'views/preferencesFee.html'
+          },
+        }
+      })
+
+    .state('preferencesAdvanced', {
         url: '/preferencesAdvanced',
         templateUrl: 'views/preferencesAdvanced.html',
         walletShouldBeComplete: true,
@@ -372,9 +431,6 @@ angular
                 case 'resume':
                   $rootScope.$emit('Local/Resume');
                   break;
-                case 'offline':
-                  $rootScope.$emit('Local/Offline');
-                  break;
               };
               $timeout(function() {
                 $rootScope.$emit('Local/SetTab', 'walletHome', true);
@@ -411,10 +467,12 @@ angular
     if (nodeWebkit.isDefined()) {
       var gui = require('nw.gui');
       var win = gui.Window.get();
-      var nativeMenuBar = new gui.Menu({ type: "menubar" });
+      var nativeMenuBar = new gui.Menu({
+        type: "menubar"
+      });
       try {
         nativeMenuBar.createMacBuiltin("Copay");
-      } catch(e) {
+      } catch (e) {
         $log.debug('This is not OSX');
       }
       win.menu = nativeMenuBar;
@@ -433,12 +491,15 @@ angular
       delete: 13,
       preferencesLanguage: 12,
       preferencesUnit: 12,
+      preferencesFee: 12,
       preferencesAltCurrency: 12,
       preferencesBwsUrl: 12,
       preferencesAlias: 12,
       preferencesEmail: 12,
       about: 12,
       logs: 13,
+      translators: 13,
+      disclaimer: 13,
       add: 11,
       create: 12,
       join: 12,
@@ -463,6 +524,9 @@ angular
             if (err.message.match('NOPROFILE')) {
               $log.debug('No profile... redirecting');
               $state.transitionTo('splash');
+            } else if (err.message.match('NONAGREEDDISCLAIMER')) {
+              $log.debug('Display disclaimer... redirecting');
+              $state.transitionTo('disclaimer');
             } else {
               throw new Error(err); // TODO
             }
@@ -484,7 +548,8 @@ angular
        */
 
       function cleanUpLater(e, e2) {
-        var cleanedUp = false, timeoutID;
+        var cleanedUp = false,
+          timeoutID;
         var cleanUp = function() {
           if (cleanedUp) return;
           cleanedUp = true;
@@ -494,7 +559,7 @@ angular
           cachedBackPanel = null;
           cachedTransitionState = '';
           if (timeoutID) {
-            timeoutID=null;
+            timeoutID = null;
             window.clearTimeout(timeoutID);
           }
         };
@@ -519,7 +584,7 @@ angular
 
         var fromName = fromState.name;
         var toName = toState.name;
-        if (!fromName || !toName) 
+        if (!fromName || !toName)
           return true;
 
         var fromWeight = pageWeight[fromName];
@@ -537,7 +602,7 @@ angular
             entering = 'CslideInRight';
           }
 
-        // Vertical Slide Animation?
+          // Vertical Slide Animation?
         } else if (fromName && fromWeight >= 0 && toWeight >= 0) {
           if (toWeight) {
             entering = 'CslideInUp';
@@ -545,7 +610,7 @@ angular
             leaving = 'CslideOutDown';
           }
 
-        // no Animation  ?
+          // no Animation  ?
         } else {
           return true;
         }
@@ -564,8 +629,8 @@ angular
         } else {
           var sc;
           // Keep prefDiv scroll
-          var contentDiv  = e.getElementsByClassName('content');
-          if (contentDiv && contentDiv[0]) 
+          var contentDiv = e.getElementsByClassName('content');
+          if (contentDiv && contentDiv[0])
             sc = contentDiv[0].scrollTop;
 
           cachedBackPanel = e.cloneNode(true);
@@ -574,7 +639,7 @@ angular
           c.appendChild(cachedBackPanel);
 
           if (sc)
-            cachedBackPanel.getElementsByClassName('content')[0].scrollTop  = sc;
+            cachedBackPanel.getElementsByClassName('content')[0].scrollTop = sc;
 
           cachedTransitionState = desiredTransitionState;
           //console.log('CACHing animation', cachedTransitionState); 

@@ -12,19 +12,40 @@
   </section>
 </nav>
 
-<div class="modal-content">
+<div class="modal-content fix-modals-touch">
   <div class="header-modal text-center">
-    <div class="size-42">
+    <div class="size-42" ng-show="btx.action != 'invalid'">
       <span ng-if="btx.action == 'received'">+</span><span ng-if="btx.action == 'sent'">-</span>{{btx.amountStr}} {{settings.unitName}}
     </div>
+    <div class="size-42" ng-show="btx.action == 'invalid'">
+      -
+    </div>
+ 
     <div class="size-18 m5t text-gray" ng-show="btx.alternativeAmount">
       {{btx.alternativeAmount}} {{settings.alternativeIsoCode}}
     </div>
   </div>
 
   <h4 class="title m0" translate>Details</h4>
+
   <ul class="no-bullet size-14 m0">
-    <li ng-if="btx.addressTo && btx.addressTo != 'N/A'" class="line-b p10 oh" ng-click="copyAddress(btx.addressTo)">
+    <div ng-if="btx.action == 'received'">
+      <li class="line-b p10 oh" ng-if="btx.message">
+        <span class="text-gray" translate>Note</span>:
+        <span class="right">{{btx.message}}</span>
+      </li>
+    </div>
+    <div ng-if="btx.action != 'received'">
+      <div ng-if="!btx.showSingle"
+        ng-repeat="output in [ btx.outputs.summary ]"
+        ng-include="'views/includes/output.html'">
+      </div>
+      <div ng-if="!btx.showSingle && btx.outputs.summary.showDetails"
+        ng-repeat="output in btx.outputs.details"
+        ng-include="'views/includes/output.html'">
+      </div>
+    </div>
+    <li ng-if="btx.showSingle && btx.addressTo && btx.addressTo != 'N/A'" class="line-b p10 oh" ng-click="copyAddress(btx.addressTo)">
     <span class="text-gray" translate>To</span>:
     <span class="right">
       <span ng-if="btx.merchant">
@@ -36,17 +57,19 @@
       </span>
     </span>
     </li>
+    <li ng-if="btx.action == 'invalid'" class="line-b p10 oh">
+    <span class="right" translate>
+      This transaction has become invalid; possibly due to a double spend attempt.
+    </span>
     <li ng-if="btx.time" class="line-b p10 oh">
     <span class="text-gray" translate>Date</span>:
     <span class="right">
       <time>{{ btx.time * 1000 | amCalendar}}</time>
     </span>
     </li>
-    <li ng-if="btx.message" class="line-b p10 oh">
-    <span class="text-gray" translate>Note</span>:
-    <span class="right">
-      {{btx.message}}
-    </span>
+    <li class="line-b p10">
+      <span class="text-gray" translate>Fee</span>:
+      <span class="right">{{feeStr}}</span>
     </li>
     <li ng-if="btx.merchant" class="line-b p10 oh">
     <span class="text-gray" translate>Merchant message</span>:

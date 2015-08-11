@@ -4,16 +4,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
+#: public/views/walletHome.html
+msgid "(possible double spend)"
+msgstr ""
+
 #: public/views/modals/txp-details.html
-msgid "* Only payment proposals created by yourself with no peer actions can be removed"
+msgid "* A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created."
 msgstr ""
 
 #: public/views/backup.html
 msgid "* You can safely install your backup on another device and use your wallet from multiple devices at the same time."
 msgstr ""
 
+<<<<<<< HEAD:po/template.pot
 #: public/views/splash/1.html
 msgid "A multisignature digibyte wallet"
+=======
+#: public/views/backup.html
+msgid "A backup without its private key will allow the user to see the wallet balance, transactions, and create spend proposals. However, it will not be able to approve (sign) proposals."
+msgstr ""
+
+#: public/views/splash.html
+msgid "A multisignature bitcoin wallet"
+>>>>>>> 77abe774ac73dbd0f631e2d3d9ef431befaab77e:i18n/po/template.pot
 msgstr ""
 
 #: public/views/preferences.html
@@ -21,6 +34,9 @@ msgid "About DigiByte Gaming Wallet"
 msgstr ""
 
 #: public/views/modals/txp-details.html
+#: src/js/controllers/copayers.js
+#: src/js/controllers/preferencesDelete.js
+#: src/js/controllers/walletHome.js
 msgid "Accept"
 msgstr ""
 
@@ -29,6 +45,7 @@ msgid "Add wallet"
 msgstr ""
 
 #: public/views/paymentUri.html
+#: public/views/modals/customized-amount.html
 #: public/views/modals/paypro.html
 msgid "Address"
 msgstr ""
@@ -37,8 +54,20 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
+#: public/views/modals/advancedSend.html
+msgid "Advanced Send"
+msgstr ""
+
+#: public/views/disclaimer.html
+msgid "Agree"
+msgstr ""
+
 #: public/views/preferencesAlias.html
 msgid "Alias for <i>{{index.walletName}}</i>"
+msgstr ""
+
+#: public/views/translators.html
+msgid "All contributions to Copay's translation are welcome. Sign up at crowdin.com and join the Copay project at"
 msgstr ""
 
 #: public/views/splash.html
@@ -51,11 +80,13 @@ msgstr ""
 
 #: public/views/paymentUri.html
 #: public/views/walletHome.html
-#: public/views/modals/txp-details.html
+#: public/views/includes/output.html
+#: public/views/modals/customized-amount.html
 msgid "Amount"
 msgstr ""
 
 #: public/views/walletHome.html
+#: public/views/modals/customized-amount.html
 msgid "Amount in"
 msgstr ""
 
@@ -70,6 +101,11 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "Available Balance"
+msgstr ""
+
+#: public/views/preferencesFee.html
+#: public/views/modals/advancedSend.html
+msgid "Average confirmation time: {{fee.nbBlocks * 10}} minutes"
 msgstr ""
 
 #: public/views/create.html
@@ -103,12 +139,20 @@ msgstr ""
 msgid "Before receiving funds, it is highly recommended you backup your wallet keys."
 msgstr ""
 
+#: public/views/preferences.html
+msgid "Bitcoin Network Fee Policy"
+msgstr ""
+
 #: public/views/paymentUri.html
 msgid "DigiByte URI is NOT valid!"
 msgstr ""
 
 #: public/views/walletHome.html
 msgid "DigiByte address"
+msgstr ""
+
+#: public/views/preferencesFee.html
+msgid "Bitcoin transactions may include a fee collected by miners on the network. The higher the fee, the greater the incentive a miner has to include that transaction in a block. Actual fees are determined based on network load and the selected policy."
 msgstr ""
 
 #: public/views/modals/txp-details.html
@@ -137,6 +181,10 @@ msgstr ""
 
 #: public/views/copayers.html
 #: public/views/walletHome.html
+#: public/views/modals/confirmation.html
+#: src/js/controllers/copayers.js
+#: src/js/controllers/preferencesDelete.js
+#: src/js/controllers/walletHome.js
 msgid "Cancel"
 msgstr ""
 
@@ -149,17 +197,24 @@ msgid "Changing wallet alias only affects the local wallet name."
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Check you connection and try again"
+msgid "Check your Internet connection and try again"
 msgstr ""
 
 #: public/views/import.html
 msgid "Choose a backup file from your computer"
 msgstr ""
 
+#: public/views/modals/wallets.html
+msgid "Choose a wallet to send funds"
+msgstr ""
+
 #: public/views/includes/topbar.html
+#: public/views/modals/advancedSend.html
 #: public/views/modals/copayers.html
+#: public/views/modals/customized-amount.html
 #: public/views/modals/paypro.html
 #: public/views/modals/scanner.html
+#: public/views/modals/wallets.html
 msgid "Close"
 msgstr ""
 
@@ -171,12 +226,24 @@ msgstr ""
 msgid "Commit hash"
 msgstr ""
 
+#: src/js/controllers/copayers.js
+#: src/js/controllers/preferencesDelete.js
+#: src/js/controllers/walletHome.js
+msgid "Confirm"
+msgstr ""
+
 #: public/views/modals/tx-details.html
 msgid "Confirmations"
 msgstr ""
 
 #: public/views/modals/copayers.html
 msgid "Copayers"
+msgstr ""
+
+#: src/js/controllers/backup.js
+#: src/js/controllers/copayers.js
+#: src/js/controllers/walletHome.js
+msgid "Copied to clipboard"
 msgstr ""
 
 #: public/views/backup.html
@@ -192,19 +259,19 @@ msgid "Copy to clipboard"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not accept payment. Check you connection and try again"
+msgid "Could not accept payment. Check your Internet connection and try again"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not broadcast payment. Check you connection and try again"
+msgid "Could not broadcast payment. Check your Internet connection and try again"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not connect wallet service. Check your Internet connexion and your wallet service configuration."
+msgid "Could not connect wallet service. Check your Internet connection and your wallet service configuration."
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not create address. Check you connection and try again"
+msgid "Could not create address. Check your Internet connection and try again"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
@@ -220,7 +287,7 @@ msgid "Could not decrypt file, check your password"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not delete payment proposal. Check you connection and try again"
+msgid "Could not delete payment proposal. Check your Internet connection and try again"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
@@ -244,7 +311,11 @@ msgid "Could not join wallet:"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not reject payment. Check you connection and try again"
+msgid "Could not recognize a valid Bitcoin QR Code"
+msgstr ""
+
+#: src/js/controllers/walletHome.js
+msgid "Could not reject payment. Check your Internet connection and try again"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
@@ -260,6 +331,7 @@ msgid "Create"
 msgstr ""
 
 #: public/views/add.html
+#: public/views/create.html
 msgid "Create new wallet"
 msgstr ""
 
@@ -287,6 +359,11 @@ msgstr ""
 msgid "Creating transaction"
 msgstr ""
 
+#: public/views/preferencesFee.html
+#: public/views/modals/advancedSend.html
+msgid "Current fee rate for this policy: {{fee.feePerKBUnit}}/kiB"
+msgstr ""
+
 #: public/views/modals/tx-details.html
 msgid "Date"
 msgstr ""
@@ -311,6 +388,7 @@ msgstr ""
 msgid "Deleting payment"
 msgstr ""
 
+#: public/views/modals/customized-amount.html
 #: public/views/modals/paypro.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
@@ -322,11 +400,23 @@ msgid "Disabled"
 msgstr ""
 
 #: public/views/backup.html
+msgid "Do not include private key in backup"
+msgstr ""
+
+#: public/views/translators.html
+msgid "Don't see your language on Crowdin? Contact the Owner on Crowdin! We'd love to support your language."
+msgstr ""
+
+#: public/views/walletHome.html
+msgid "Download CSV file"
+msgstr ""
+
+#: public/views/backup.html
 msgid "Download backup"
 msgstr ""
 
-#: public/views/includes/password.html
-msgid "ENTER"
+#: src/js/services/feeService.js
+msgid "Economy"
 msgstr ""
 
 #: public/views/preferences.html
@@ -339,10 +429,6 @@ msgstr ""
 
 #: src/js/controllers/backup.js
 msgid "Encrypted backup file saved"
-msgstr ""
-
-#: src/js/controllers/index.js
-msgid "English"
 msgstr ""
 
 #: public/views/includes/password.html
@@ -366,6 +452,10 @@ msgstr ""
 msgid "Expires"
 msgstr ""
 
+#: public/views/backup.html
+msgid "Failed to create backup"
+msgstr ""
+
 #: src/js/controllers/importLegacy.js
 msgid "Failed to import wallets"
 msgstr ""
@@ -374,12 +464,21 @@ msgstr ""
 msgid "Family vacation funds"
 msgstr ""
 
+#: public/views/modals/tx-details.html
+#: public/views/modals/txp-details.html
+msgid "Fee"
+msgstr ""
+
+#: public/views/modals/advancedSend.html
+msgid "Fee Policy"
+msgstr ""
+
 #. Get information of payment if using Payment Protocol
 #: src/js/controllers/walletHome.js
 msgid "Fetching Payment Information"
 msgstr ""
 
-#: src/js/controllers/index.js
+#: public/views/translators.html
 msgid "French"
 msgstr ""
 
@@ -391,18 +490,43 @@ msgstr ""
 msgid "GET STARTED"
 msgstr ""
 
+#: public/views/modals/customized-amount.html
+msgid "Generate QR Code"
+msgstr ""
+
 #: public/views/walletHome.html
 msgid "Generate new address"
+msgstr ""
+
+#: public/views/walletHome.html
+msgid "Generating .csv file..."
+msgstr ""
+
+#: public/views/translators.html
+msgid "German"
+msgstr ""
+
+#: public/views/modals/wallets.html
+msgid "Getting address for wallet {{selectedWalletName}} ..."
 msgstr ""
 
 #: public/views/preferences.html
 msgid "Global settings"
 msgstr ""
 
+#: public/views/disclaimer.html
+msgid "Go back"
+msgstr ""
+
+#: public/views/translators.html
+msgid "Greek"
+msgstr ""
+
 #: public/views/import.html
 msgid "Have a Backup from Copay v0.9?"
 msgstr ""
 
+#: public/views/backup.html
 #: public/views/create.html
 #: public/views/join.html
 msgid "Hide Advanced options"
@@ -414,6 +538,10 @@ msgstr ""
 
 #: src/js/controllers/index.js
 msgid "Home"
+msgstr ""
+
+#: public/views/disclaimer.html
+msgid "I affirm that I have read, understood, and agree with these terms."
 msgstr ""
 
 #: public/views/create.html
@@ -451,7 +579,19 @@ msgstr ""
 msgid "Importing..."
 msgstr ""
 
-#: src/js/controllers/index.js
+#: public/views/walletHome.html
+msgid "Invalid"
+msgstr ""
+
+#: src/js/controllers/copayers.js
+msgid "Invitation to share a Copay Wallet"
+msgstr ""
+
+#: public/views/translators.html
+msgid "Italian"
+msgstr ""
+
+#: public/views/translators.html
 msgid "Japanese"
 msgstr ""
 
@@ -462,6 +602,10 @@ msgstr ""
 
 #: public/views/join.html
 msgid "Join"
+msgstr ""
+
+#: src/js/controllers/copayers.js
+msgid "Join my Copay wallet. Here is the invitation code: {{secret}}  You can download Copay for your phone or desktop at https://copay.io"
 msgstr ""
 
 #: public/views/add.html
@@ -532,22 +676,30 @@ msgstr ""
 msgid "New Payment Proposal"
 msgstr ""
 
-#: public/views/modals/confirmation.html
-msgid "No"
+#: public/views/walletHome.html
+msgid "No Private key"
 msgstr ""
 
 #: public/views/walletHome.html
 msgid "No transactions yet"
 msgstr ""
 
+#: src/js/services/feeService.js
+msgid "Normal"
+msgstr ""
+
 #: public/views/walletHome.html
+#: public/views/modals/customized-amount.html
 msgid "Not valid"
 msgstr ""
 
 #: public/views/walletHome.html
-#: public/views/modals/tx-details.html
-#: public/views/modals/txp-details.html
+#: public/views/includes/output.html
 msgid "Note"
+msgstr ""
+
+#: public/views/includes/password.html
+msgid "OK"
 msgstr ""
 
 #: public/views/modals/tx-status.html
@@ -670,12 +822,24 @@ msgstr ""
 msgid "Please, select your backup file"
 msgstr ""
 
-#: src/js/controllers/index.js
+#: public/views/translators.html
 msgid "Portuguese"
 msgstr ""
 
 #: public/views/walletHome.html
 msgid "Preferences"
+msgstr ""
+
+#: src/js/controllers/backup.js
+msgid "Preparing backup..."
+msgstr ""
+
+#: src/js/services/feeService.js
+msgid "Priority"
+msgstr ""
+
+#: public/views/modals/customized-amount.html
+msgid "QR Code"
 msgstr ""
 
 #: public/views/modals/scanner.html
@@ -688,6 +852,11 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "Received"
+msgstr ""
+
+#: public/views/includes/output.html
+#: public/views/includes/transaction.html
+msgid "Recipients"
 msgstr ""
 
 #: public/views/walletHome.html
@@ -717,6 +886,11 @@ msgstr ""
 #: public/views/backup.html
 #: public/views/includes/password.html
 msgid "Repeat password"
+msgstr ""
+
+#: public/views/walletHome.html
+#: public/views/modals/customized-amount.html
+msgid "Request a specific amount"
 msgstr ""
 
 #: public/views/import.html
@@ -788,6 +962,10 @@ msgstr ""
 msgid "Send"
 msgstr ""
 
+#: public/views/walletHome.html
+msgid "Send All"
+msgstr ""
+
 #: public/views/backup.html
 #: public/views/preferencesLogs.html
 msgid "Send by email"
@@ -837,6 +1015,7 @@ msgstr ""
 msgid "Shared Wallet"
 msgstr ""
 
+#: public/views/backup.html
 #: public/views/create.html
 #: public/views/join.html
 msgid "Show Advanced options"
@@ -850,7 +1029,7 @@ msgstr ""
 msgid "Signing transaction"
 msgstr ""
 
-#: src/js/controllers/index.js
+#: public/views/translators.html
 msgid "Spanish"
 msgstr ""
 
@@ -862,6 +1041,11 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "Tap to retry"
+msgstr ""
+
+#: public/views/disclaimer.html
+#: public/views/preferencesAbout.html
+msgid "Terms of Use"
 msgstr ""
 
 #: public/views/create.html
@@ -888,13 +1072,25 @@ msgstr ""
 msgid "The private key for this wallet is encrypted. Exporting a backup will keep the private key encrypted in the backup archive."
 msgstr ""
 
+#: public/views/disclaimer.html
+msgid "The software you are about to use functions as a free, open source, and multi-signature digital wallet. The software does not constitute an account where BitPay or other third parties serve as financial intermediaries or custodians of your bitcoin.  While the software has undergone beta testing and continues to be improved by feedback from the open-source user and developer community, we cannot guarantee that there will be no bugs in the software. You acknowledge that your use of this software is at your own discretion and in compliance with all applicable laws. You are responsible for safekeeping your passwords, private key pairs, PINs and any other codes you use to access the software. IF YOU LOSE ACCESS TO YOUR COPAY WALLET OR YOUR ENCRYPTED PRIVATE KEYS AND YOU HAVE NOT SEPARATELY STORED A BACKUP OF YOUR WALLET AND CORRESPONDING PASSWORD, YOU ACKNOWLEDGE AND AGREE THAT ANY BITCOIN YOU HAVE ASSOCIATED WITH THAT COPAY  WALLET WILL BECOME INACCESSIBLE. All transaction requests are irreversible.  The authors of the software, employees and affiliates of Bitpay, copyright holders, and BitPay, Inc. cannot retrieve your private keys or passwords if you lose or forget them and cannot guarantee transaction confirmation as they do not have control over the Bitcoin network. To the fullest extent permitted by law, this software is provided “as is” and no representations or warranties can be made of any kind, express or implied, including but not limited to the warranties of merchantability, fitness or a particular purpose and noninfringement. You assume any and all risks associated with the use of the software. In no event shall the authors of the software, employees and affiliates of Bitpay, copyright holders, or BitPay, Inc. be held liable for any claim, damages or other liability, whether in an action of contract, tort, or otherwise, arising from, out of or in connection with the software. We reserve the right to modify this disclaimer from time to time."
+msgstr ""
+
 #: src/js/controllers/copayers.js
 #: src/js/controllers/preferencesDelete.js
 msgid "The wallet \"{{walletName}}\" was deleted"
 msgstr ""
 
+#: public/views/paymentUri.html
+msgid "There are no wallets to make this payment"
+msgstr ""
+
 #: src/js/controllers/import.js
 msgid "There is an error in the form"
+msgstr ""
+
+#: public/views/modals/tx-details.html
+msgid "This transaction has become invalid; possibly due to a double spend attempt."
 msgstr ""
 
 #: public/views/walletHome.html
@@ -906,10 +1102,15 @@ msgid "Time"
 msgstr ""
 
 #: public/views/walletHome.html
+#: public/views/includes/output.html
 #: public/views/includes/transaction.html
 #: public/views/modals/tx-details.html
 #: public/views/modals/txp-details.html
 msgid "To"
+msgstr ""
+
+#: public/views/includes/output.html
+msgid "Total"
 msgstr ""
 
 #: public/views/walletHome.html
@@ -918,6 +1119,14 @@ msgstr ""
 
 #: public/views/modals/tx-details.html
 msgid "Transaction"
+msgstr ""
+
+#: public/views/translators.html
+msgid "Translation Credits"
+msgstr ""
+
+#: public/views/preferencesAbout.html
+msgid "Translators"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
@@ -1003,7 +1212,7 @@ msgid "Wallet name"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Wallet service timed out. Check your Internet connexion and your wallet service configuration."
+msgid "Wallet service timed out. Check your Internet connection and your wallet service configuration."
 msgstr ""
 
 #: public/views/preferencesDeleteWallet.html
@@ -1068,6 +1277,10 @@ msgstr ""
 
 #: public/views/walletHome.html
 msgid "too long!"
+msgstr ""
+
+#: src/js/controllers/walletHome.js
+msgid "{{fee}} will be discounted for bitcoin networking fees"
 msgstr ""
 
 #: src/js/controllers/importLegacy.js

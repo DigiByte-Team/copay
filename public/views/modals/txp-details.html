@@ -11,18 +11,24 @@
     </h1>
   </section>
 </nav>
-<div class="modal-content" ng-init="updateCopayerList()">
+<div class="modal-content fix-modals-touch" ng-init="updateCopayerList()">
   <h4 class="title m0" translate>Details</h4>
   <ul class="no-bullet size-14 m0">
-    <li class="line-b p10 oh" ng-click="copyAddress(tx.toAddress)">
-      <span class="text-gray" translate>To</span>:
-      <span class="right enable_text_select">{{tx.toAddress}}</span>
-    </li>
+    <div ng-if="!tx.showSingle"
+      ng-repeat="output in [ tx.outputs.summary ]"
+      ng-include="'views/includes/output.html'">
+    </div>
+    <div ng-if="!tx.showSingle && tx.outputs.summary.showDetails"
+      ng-repeat="output in tx.outputs.details"
+      ng-include="'views/includes/output.html'">
+    </div>
+    <div ng-if="tx.showSingle"
+      ng-repeat="output in [ tx ]"
+      ng-include="'views/includes/output.html'">
+    </div>
     <li class="line-b p10">
-      <span class="text-gray" translate>Amount</span>:
-      <span class="right">{{amountStr}}
-        <span class="label gray radius">{{alternativeAmountStr}}</span>
-      </span>
+      <span class="text-gray" translate>Fee</span>:
+      <span class="right">{{feeStr}}</span>
     </li>
     <li class="line-b p10">
       <span class="text-gray" translate>Time</span>:
@@ -33,10 +39,6 @@
     <li class="line-b p10 oh">
       <span class="text-gray" translate>Created by</span>:
       <span class="right">{{tx.creatorName}}</span>
-    </li>
-    <li class="line-b p10 oh">
-      <span class="text-gray" translate>Note</span>:
-      <span class="right">{{tx.message}}</span>
     </li>
   </ul>
   <div ng-if="tx.paypro">
@@ -98,7 +100,7 @@
         <span translate>Reject</span>
       </button>
     </div>
-    <div class="large-5 medium-5 small-6 columns text-right">
+    <div class="large-5 medium-5 small-6 columns text-right" ng-show="canSign">
       <button class="button primary round expand" ng-click="sign(tx)"
         ng-style="{'background-color':color}"
         ng-disabled="loading">
@@ -108,7 +110,7 @@
     </div>
   </div>
 
-  <div class="text-center text-gray" ng-show="tx.status != 'pending'">
+  <div class="text-center text-gray m20b" ng-show="tx.status != 'pending'">
     <div class="m10t"
       ng-show="tx.status=='accepted'" translate>
       Payment accepted...
@@ -132,12 +134,12 @@
     </div>
   </div>
 
-  <div class="row column m20t" ng-if="tx.couldRemove">
-    <div class="text-gray size-12 text-center m20b" show="tx.couldRemove" translate>
-      * Only payment proposals created by yourself with no peer actions can be removed
+  <div class="row column m20t" ng-if="tx.canBeRemoved">
+    <div class="text-gray size-12 text-center m20b" show="tx.canBeRemoved" translate>
+      * A payment proposal can be deleted if 1) you are the creator, and no other copayer has signed, or 2) 24 hours have passed since the proposal was created.
     </div>
     <button class="tiny expand round outline dark-gray" ng-click="remove(tx)"
-      ng-disabled="loading" ng-show="tx.couldRemove">
+      ng-disabled="loading" ng-show="tx.canBeRemoved">
       <i class="fi-trash size-14 m5r"></i>
       <span translate>Delete Payment Proposal</span>
     </button>

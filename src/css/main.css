@@ -49,6 +49,13 @@ h4.title {
   font-size: 0.7rem;
 }
 
+h4.title a {
+  text-transform: none;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 12px;
+}
+
 body, html{
   height:100%;
   width:100%;
@@ -157,6 +164,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, inpu
   overflow: auto;
 }
 
+.content.disclaimer {
+  top: 0;
+}
 
 .logo-setup {
   text-align: center;
@@ -867,6 +877,7 @@ input.ng-invalid-match, input.ng-invalid-match:focus {
 .text-alert {color: red;}
 .text-success {color: #1ABC9C;}
 .text-spacing {letter-spacing:2px;}
+.text-capitalize {text-transform: capitalize;}
 
 .panel {
   background: #FFFFFF;

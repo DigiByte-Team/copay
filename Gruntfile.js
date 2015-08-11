@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   // Project Configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+<<<<<<< HEAD
     release: {
       options: {
         bump: true,
@@ -24,6 +25,8 @@ module.exports = function(grunt) {
         }
       }
     },
+=======
+>>>>>>> 77abe774ac73dbd0f631e2d3d9ef431befaab77e
     exec: {
       version: {
         command: 'node ./util/version.js'
@@ -32,10 +35,10 @@ module.exports = function(grunt) {
         command: 'rm -Rf bower_components node_modules'
       },
       osx64: {
-        command: 'hdiutil create -volname Copay -srcfolder webkitbuilds/copay/osx64/copay.app/ -ov -format UDZO webkitbuilds/copay-osx64.dmg'
+        command: 'hdiutil create  -megabytes 150 -volname Copay -srcfolder webkitbuilds/copay/osx64/copay.app/ -ov -format UDZO webkitbuilds/copay-osx64.dmg'
       },
       osx32: {
-        command: 'hdiutil create -volname Copay -srcfolder webkitbuilds/copay/osx32/copay.app/ -ov -format UDZO webkitbuilds/copay-osx32.dmg'
+        command: 'hdiutil create  -megabytes 150 -volname Copay -srcfolder webkitbuilds/copay/osx32/copay.app/ -ov -format UDZO webkitbuilds/copay-osx32.dmg'
       }
     },
     watch: {
@@ -44,10 +47,6 @@ module.exports = function(grunt) {
           grunt.log.writeln('The watch finished in ' + time + 'ms at ' + (new Date()).toString());
           grunt.log.writeln('Waiting for more changes...');
         },
-      },
-      readme: {
-        files: ['README.md'],
-        tasks: ['markdown']
       },
       css: {
         files: ['src/css/*.css'],
@@ -65,16 +64,6 @@ module.exports = function(grunt) {
           'src/js/controllers/*.js'
         ],
         tasks: ['concat:js']
-      }
-    },
-    markdown: {
-      all: {
-        files: [{
-          expand: true,
-          src: 'README.md',
-          dest: './doc',
-          ext: '.html'
-        }]
       }
     },
     concat: {
@@ -144,7 +133,7 @@ module.exports = function(grunt) {
     nggettext_extract: {
       pot: {
         files: {
-          'po/template.pot': [
+          'i18n/po/template.pot': [
             'public/index.html', 
             'public/views/*.html', 
             'public/views/**/*.html',
@@ -161,7 +150,7 @@ module.exports = function(grunt) {
           module: 'copayApp'
         },
         files: {
-          'src/js/translations.js': ['po/*.po']
+          'src/js/translations.js': ['i18n/po/*.po']
         }
       },
     },
@@ -174,8 +163,8 @@ module.exports = function(grunt) {
       },
       linux: {
         files: [
-          {expand: true, cwd: 'webkitbuilds/',src: ['.desktop', 'favicon.ico'],dest: 'webkitbuilds/copay/linux32/', flatten: true, filter: 'isFile' },
-          {expand: true, cwd: 'webkitbuilds/',src: ['.desktop', 'favicon.ico'],dest: 'webkitbuilds/copay/linux64/', flatten: true, filter: 'isFile' },
+          {expand: true, cwd: 'webkitbuilds/',src: ['.desktop', '../public/img/icons/favicon.ico', '../public/img/icons/icon-256.png'],dest: 'webkitbuilds/copay/linux32/', flatten: true, filter: 'isFile' },
+          {expand: true, cwd: 'webkitbuilds/',src: ['.desktop', '../public/img/icons/favicon.ico', '../public/img/icons/icon-256.png'],dest: 'webkitbuilds/copay/linux64/', flatten: true, filter: 'isFile' },
         ],
       }
     },
@@ -234,20 +223,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-angular-gettext');
-  grunt.loadNpmTasks('grunt-markdown');
-  grunt.loadNpmTasks('grunt-release');
   grunt.loadNpmTasks('grunt-exec');
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-karma-coveralls');
   grunt.loadNpmTasks('grunt-node-webkit-builder');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', [
-    'nggettext_compile', 'exec:version', 'concat', 'copy:icons'
-  ]);
-  grunt.registerTask('prod', [
-    'default', 'uglify'
-  ]);
+  grunt.registerTask('default', ['nggettext_compile', 'exec:version', 'concat', 'copy:icons']);
+  grunt.registerTask('prod', ['default', 'uglify']);
   grunt.registerTask('translate', ['nggettext_extract']);
   grunt.registerTask('test', ['karma:unit']);
   grunt.registerTask('test-coveralls', ['karma:prod', 'coveralls']);
