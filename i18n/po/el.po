@@ -137,7 +137,7 @@ msgid "Bitcoin URI is NOT valid!"
 msgstr "Το σύστημα Bitcoin URI δεν είναι έγκυρο!"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "DigiByte Address"
 msgstr "Διεύθυνση Bitcoin"
 
 #: public/views/preferencesFee.html
@@ -283,7 +283,7 @@ msgid "Could not join wallet:"
 msgstr "Δεν μπορείτε να συμμετάσχετε στο πορτοφόλι:"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid DigiByte QR Code"
 msgstr "Δεν ήταν δυνατή η αναγνώριση ενός έγκυρου κωδικού QR για Βitcoin"
 
 #: src/js/controllers/walletHome.js
@@ -627,7 +627,7 @@ msgid "Multisignature wallet"
 msgstr "Πορτοφόλι Πολλών Υπογραφών"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My DigiByte Address"
 msgstr "Η  διεύθυνση Bitcoin μου"
 
 #: public/views/paymentUri.html

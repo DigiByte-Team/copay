@@ -32,7 +32,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     var form = $scope.sendForm;
     if (form.address.$invalid) {
       self.resetForm();
-      self.error = gettext('Could not recognize a valid Bitcoin QR Code');
+      self.error = gettext('Could not recognize a valid DigiByte QR Code');
     }
   });
 

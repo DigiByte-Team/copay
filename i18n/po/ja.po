@@ -294,7 +294,7 @@ msgid "Could not join wallet:"
 msgstr "ウォレットに参加できませんでした："
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid DigiByte QR Code"
 msgstr "有効なビットコインQRコードが認識できませんでした。"
 
 #: src/js/controllers/walletHome.js

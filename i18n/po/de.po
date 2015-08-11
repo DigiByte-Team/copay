@@ -137,7 +137,7 @@ msgid "Bitcoin URI is NOT valid!"
 msgstr "Bitcoin URI ist NICHT gültig!"
 
 #: public/views/walletHome.html
-msgid "Bitcoin address"
+msgid "DigiByte Address"
 msgstr "Bitcoinadresse"
 
 #: public/views/preferencesFee.html
@@ -283,7 +283,7 @@ msgid "Could not join wallet:"
 msgstr "Beteiligung am Wallet nicht möglich"
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid DigiByte QR Code"
 msgstr "Es konnte kein gültiger Bitcoin-QR-Code erkannt werden,"
 
 #: src/js/controllers/walletHome.js
@@ -627,7 +627,7 @@ msgid "Multisignature wallet"
 msgstr "Gemeinschaftliches Wallet"
 
 #: public/views/walletHome.html
-msgid "My Bitcoin address"
+msgid "My DigiByte Address"
 msgstr "Eigene Bitcoinadresse"
 
 #: public/views/paymentUri.html

@@ -311,7 +311,7 @@ msgid "Could not join wallet:"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
-msgid "Could not recognize a valid Bitcoin QR Code"
+msgid "Could not recognize a valid DigiByte QR Code"
 msgstr ""
 
 #: src/js/controllers/walletHome.js
