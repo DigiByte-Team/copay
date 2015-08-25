@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://dgbwallet.com:3232/bws/api',
+      url: 'http://45.79.223.10:3232/bws/api',
     },
 
     // wallet default config
